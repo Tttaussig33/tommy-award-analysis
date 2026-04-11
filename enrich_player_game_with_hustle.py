@@ -3,12 +3,12 @@ import time
 from typing import Optional
 
 import pandas as pd
-from nba_api.stats.endpoints import boxscorehustlev2, hustlestatsboxscore
+from nba_api.stats.endpoints import boxscoreadvancedv3, boxscorehustlev2, hustlestatsboxscore
 
 
-REQUEST_SLEEP = 0.1
-REQUEST_TIMEOUT = 4
-MAX_RETRIES = 1
+REQUEST_SLEEP = 0.2
+REQUEST_TIMEOUT = 8
+MAX_RETRIES = 2
 
 
 def find_col(df: pd.DataFrame, candidates: list[str]) -> Optional[str]:
@@ -72,9 +72,47 @@ def fetch_hustle_for_game(game_id: str) -> pd.DataFrame:
     return pd.DataFrame(columns=["GAME_ID", "personId", "deflections", "charges_drawn"])
 
 
+def fetch_advanced_for_game(game_id: str) -> pd.DataFrame:
+    """
+    Return columns: GAME_ID, personId, usage_rate.
+    usage_rate is normalized to 0-1.
+    """
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            dfs = boxscoreadvancedv3.BoxScoreAdvancedV3(
+                game_id=game_id, timeout=REQUEST_TIMEOUT
+            ).get_data_frames()
+            if not dfs:
+                continue
+            player_df = dfs[0]
+            if player_df is None or player_df.empty:
+                continue
+
+            id_col = find_col(player_df, ["personId", "PLAYER_ID", "playerId", "player_id"])
+            usage_col = find_col(player_df, ["usagePercentage", "USG_PCT", "usage_rate"])
+            if id_col is None or usage_col is None:
+                continue
+
+            usage_rate = pd.to_numeric(player_df[usage_col], errors="coerce") / 100.0
+            out = pd.DataFrame(
+                {
+                    "GAME_ID": str(game_id),
+                    "personId": player_df[id_col].astype(str),
+                    "usage_rate": usage_rate,
+                }
+            )
+            return out
+        except Exception:
+            if attempt == MAX_RETRIES:
+                print(f"Skipping game {game_id} on advanced: unavailable/timeout")
+            continue
+
+    return pd.DataFrame(columns=["GAME_ID", "personId", "usage_rate"])
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Add deflections and charges_drawn to player-game table using NBA hustle endpoints."
+        description="Add hustle stats and usage_rate to player-game table using NBA endpoints."
     )
     parser.add_argument(
         "--input",
@@ -100,29 +138,43 @@ def main() -> None:
     df["GAME_ID_KEY"] = df[game_col].astype(str)
     df["PERSON_ID_KEY"] = df[player_col].astype(str)
 
+    # Allow safe re-runs on an already enriched file.
+    for col in ["deflections", "charges_drawn", "usage_rate"]:
+        if col in df.columns:
+            df = df.drop(columns=[col])
+
     unique_games = sorted(df["GAME_ID_KEY"].dropna().unique().tolist())
     hustle_frames = []
+    advanced_frames = []
 
     for idx, game_id in enumerate(unique_games, start=1):
         if idx % 50 == 0 or idx == 1 or idx == len(unique_games):
             print(f"Fetching hustle: {idx}/{len(unique_games)} games")
         hustle_frames.append(fetch_hustle_for_game(game_id))
+        advanced_frames.append(fetch_advanced_for_game(game_id))
         time.sleep(REQUEST_SLEEP)
 
     hustle_df = pd.concat(hustle_frames, ignore_index=True)
     if not hustle_df.empty:
-        hustle_df = hustle_df.drop_duplicates(subset=["GAME_ID", "personId"], keep="first")
+        hustle_df = (
+            hustle_df.drop_duplicates(subset=["GAME_ID", "personId"], keep="first")
+            .rename(columns={"GAME_ID": "GAME_ID_KEY", "personId": "PERSON_ID_KEY"})
+        )
 
-    merged = df.merge(
-        hustle_df,
-        left_on=["GAME_ID_KEY", "PERSON_ID_KEY"],
-        right_on=["GAME_ID", "personId"],
-        how="left",
-    )
+    advanced_df = pd.concat(advanced_frames, ignore_index=True)
+    if not advanced_df.empty:
+        advanced_df = (
+            advanced_df.drop_duplicates(subset=["GAME_ID", "personId"], keep="first")
+            .rename(columns={"GAME_ID": "GAME_ID_KEY", "personId": "PERSON_ID_KEY"})
+        )
 
-    merged = merged.drop(columns=["GAME_ID_KEY", "PERSON_ID_KEY", "GAME_ID", "personId"], errors="ignore")
+    merged = df.merge(hustle_df, on=["GAME_ID_KEY", "PERSON_ID_KEY"], how="left")
+    merged = merged.merge(advanced_df, on=["GAME_ID_KEY", "PERSON_ID_KEY"], how="left")
+
+    merged = merged.drop(columns=["GAME_ID_KEY", "PERSON_ID_KEY"], errors="ignore")
     merged["deflections"] = pd.to_numeric(merged["deflections"], errors="coerce")
     merged["charges_drawn"] = pd.to_numeric(merged["charges_drawn"], errors="coerce")
+    merged["usage_rate"] = pd.to_numeric(merged["usage_rate"], errors="coerce")
     merged.to_csv(args.output, index=False)
 
     print("\nDone.")
@@ -130,6 +182,7 @@ def main() -> None:
     print(f"Rows: {len(merged)}")
     print(f"Rows with deflections: {int(merged['deflections'].notna().sum())}")
     print(f"Rows with charges_drawn: {int(merged['charges_drawn'].notna().sum())}")
+    print(f"Rows with usage_rate: {int(merged['usage_rate'].notna().sum())}")
 
 
 if __name__ == "__main__":

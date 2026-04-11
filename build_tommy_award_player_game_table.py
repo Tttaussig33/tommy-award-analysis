@@ -354,7 +354,7 @@ def load_tommy_winners_csv(csv_path):
     return labels_df
 
 
-def attach_game_ids_to_winners(labels_df, team_id=CELTICS_TEAM_ID):
+def attach_game_ids_to_winners(labels_df, team_id=CELTICS_TEAM_ID, strict=False):
     """
     Match each winner date in the CSV to the Celtics GAME_ID.
     """
@@ -393,10 +393,14 @@ def attach_game_ids_to_winners(labels_df, team_id=CELTICS_TEAM_ID):
     if unresolved:
         unresolved_df = pd.DataFrame(unresolved)
         missing_dates = unresolved_df["game_date"].dt.strftime("%Y-%m-%d").unique().tolist()
-        raise ValueError(
+        msg = (
             "Could not match some winner dates to Celtics games, even within +/- 1 day: "
             + ", ".join(missing_dates)
         )
+        if strict:
+            raise ValueError(msg)
+        print(msg)
+        print("Continuing with matched games only.")
 
     return pd.DataFrame(matched_rows)
 
