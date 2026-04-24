@@ -49,6 +49,43 @@ lasso, elastic net), a decision tree, a random forest, and XGBoost on
 the held-out \textbf{2024--25} and \textbf{2025--26} seasons.
 
 % ==================================================================
+\section{Sample game data}
+% ==================================================================
+Table~\ref{tab:sample-game-mar6-2026} lists one Celtics game from the
+hustle table (2026-03-06, game ID 22500908 in the source notebook export). The
+\textbf{Tommy winner} column is the per-game label~\texttt{y} (1 = Tommy
+recipient for that game). \textbf{Net rtg.} is the on/off proxy
+\texttt{plusMinusPoints}, shown as a whole number as in the notebook.
+
+\begin{table}[H]
+    \centering
+    \caption{Sample box-style rows for 2026-03-06 (Boston).}
+    \label{tab:sample-game-mar6-2026}
+    \renewcommand{\arraystretch}{1.15}
+    \rowcolors{2}{lightgray}{white}
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{@{}llcrrrrrrrr@{}}
+        \toprule
+        \textbf{Date} & \textbf{Player} & \textbf{Tommy win.} & \textbf{Min} & \textbf{PTS} & \textbf{REB} & \textbf{AST} & \textbf{OREB} & \textbf{STL} & \textbf{BLK} & \textbf{Net rtg.} \\
+        \midrule
+        2026-03-06 & Payton Pritchard     & 0 & 33.8 & 18 &  7 & 6 & 2 & 0 & 2 & 19 \\
+        2026-03-06 & Jaylen Brown         & 0 & 33.3 & 24 &  7 & 7 & 3 & 2 & 0 & 20 \\
+        2026-03-06 & Derrick White        & 0 & 31.1 & 20 &  4 & 4 & 1 & 2 & 2 & 23 \\
+        2026-03-06 & Jayson Tatum         & 1 & 27.2 & 15 & 12 & 7 & 1 & 1 & 0 & 20 \\
+        2026-03-06 & Neemias Queta        & 0 & 25.6 & 16 & 15 & 0 & 3 & 1 & 1 & 16 \\
+        2026-03-06 & Sam Hauser           & 0 & 22.5 &  6 &  5 & 0 & 1 & 0 & 2 &  0 \\
+        2026-03-06 & Baylor Scheierman    & 0 & 20.8 &  5 &  2 & 2 & 0 & 0 & 0 &  0 \\
+        2026-03-06 & Hugo Gonz\'alez      & 0 & 18.9 &  6 &  2 & 2 & 0 & 0 & 1 &  2 \\
+        2026-03-06 & Luka Garza           & 0 & 17.9 & 10 &  3 & 1 & 3 & 0 & 2 &  9 \\
+        2026-03-06 & Ron Harper Jr.       & 0 &  4.3 &  0 &  1 & 0 & 0 & 0 & 0 & -4 \\
+        2026-03-06 & Amari Williams       & 0 &  2.7 &  0 &  0 & 0 & 0 & 0 & 0 & -4 \\
+        2026-03-06 & Nikola Vu\v{c}evi\'c & 0 &  1.8 &  0 &  0 & 0 & 0 & 0 & 0 & -1 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% ==================================================================
 \section{Model Results}
 % ==================================================================
 Table~\ref{tab:results} compares every classifier on the held-out
