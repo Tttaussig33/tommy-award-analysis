@@ -1,0 +1,844 @@
+GAME_ID,game_date,season,team_slug,team,player_name,points_rank,minutes_decimal_rank,pred_prob
+22400001,2024-11-12,2024-25,atlanta_hawks,Atlanta Hawks,Clint Capela,3,8,0.4952774148667481
+22400250,2024-11-18,2024-25,atlanta_hawks,Atlanta Hawks,Clint Capela,3,4,0.2976991408716724
+22400323,2024-12-04,2024-25,atlanta_hawks,Atlanta Hawks,Bogdan Bogdanović,4,5,0.3582818695087387
+22400350,2024-12-08,2024-25,atlanta_hawks,Atlanta Hawks,Larry Nance Jr.,3,6,0.3418563927289519
+22400370,2024-12-19,2024-25,atlanta_hawks,Atlanta Hawks,Larry Nance Jr.,4,4,0.4729244823147447
+22400587,2025-01-18,2024-25,atlanta_hawks,Atlanta Hawks,Onyeka Okongwu,3,5,0.4163875963856505
+22400602,2025-01-20,2024-25,atlanta_hawks,Atlanta Hawks,Onyeka Okongwu,3,6,0.2761196878128751
+22400612,2025-01-22,2024-25,atlanta_hawks,Atlanta Hawks,Clint Capela,3,7,0.3982814351752202
+22400756,2025-02-10,2024-25,atlanta_hawks,Atlanta Hawks,Terance Mann,3,10,0.227523580253901
+22400899,2025-03-06,2024-25,atlanta_hawks,Atlanta Hawks,Onyeka Okongwu,3,3,0.4530847896162154
+22400914,2025-03-08,2024-25,atlanta_hawks,Atlanta Hawks,Onyeka Okongwu,3,4,0.5427090455150937
+22500130,2025-10-29,2025-26,atlanta_hawks,Atlanta Hawks,Luke Kennard,3,5,0.3654014030648628
+22500251,2025-11-18,2025-26,atlanta_hawks,Atlanta Hawks,Mouhamed Gueye,5,6,0.2854282127002183
+22500327,2025-12-03,2025-26,atlanta_hawks,Atlanta Hawks,Asa Newell,3,9,0.2641908940919212
+22500463,2025-12-31,2025-26,atlanta_hawks,Atlanta Hawks,Kristaps Porziņģis,3,8,0.3873830610651416
+22500488,2026-01-03,2025-26,atlanta_hawks,Atlanta Hawks,Dyson Daniels,3,3,0.3465318818791312
+22500659,2026-01-26,2025-26,atlanta_hawks,Atlanta Hawks,Christian Koloko,6,7,0.295010446698782
+22500917,2026-03-07,2025-26,atlanta_hawks,Atlanta Hawks,Dyson Daniels,4,3,0.2776685521952557
+22500939,2026-03-10,2025-26,atlanta_hawks,Atlanta Hawks,Onyeka Okongwu,3,4,0.3737044177572654
+22501078,2026-03-28,2025-26,atlanta_hawks,Atlanta Hawks,Jock Landale,4,3,0.503741153915273
+22501107,2026-04-01,2025-26,atlanta_hawks,Atlanta Hawks,Dyson Daniels,4,4,0.3121889988060064
+22501158,2026-04-08,2025-26,atlanta_hawks,Atlanta Hawks,Onyeka Okongwu,3,4,0.3609793703715749
+22400098,2024-10-27,2024-25,brooklyn_nets,Brooklyn Nets,Nic Claxton,5,6,0.2819787090146947
+22400022,2024-11-19,2024-25,brooklyn_nets,Brooklyn Nets,Dorian Finney-Smith,3,4,0.353674214967118
+22400320,2024-12-04,2024-25,brooklyn_nets,Brooklyn Nets,Ben Simmons,6,8,0.2733434925686738
+22400651,2025-01-27,2024-25,brooklyn_nets,Brooklyn Nets,Day'Ron Sharpe,4,6,0.3479844919969913
+22400663,2025-01-29,2024-25,brooklyn_nets,Brooklyn Nets,Nic Claxton,5,5,0.2577853027164624
+22400737,2025-02-07,2024-25,brooklyn_nets,Brooklyn Nets,Trendon Watford,3,6,0.3162219704938106
+22400807,2025-02-22,2024-25,brooklyn_nets,Brooklyn Nets,Day'Ron Sharpe,6,9,0.2701833366604504
+22400888,2025-03-04,2024-25,brooklyn_nets,Brooklyn Nets,Trendon Watford,4,5,0.3142596163618541
+22400901,2025-03-06,2024-25,brooklyn_nets,Brooklyn Nets,Keon Johnson,4,5,0.2734569688663723
+22400968,2025-03-15,2024-25,brooklyn_nets,Brooklyn Nets,Maxwell Lewis,3,9,0.4720069548632436
+22400994,2025-03-18,2024-25,brooklyn_nets,Brooklyn Nets,Trendon Watford,4,6,0.1693931579979196
+22401075,2025-03-29,2024-25,brooklyn_nets,Brooklyn Nets,Cameron Johnson,4,6,0.4368941118166122
+22500080,2025-10-22,2025-26,brooklyn_nets,Brooklyn Nets,Day'Ron Sharpe,3,11,0.383886216049536
+22500091,2025-10-24,2025-26,brooklyn_nets,Brooklyn Nets,Ziaire Williams,3,4,0.4209509243488423
+22500116,2025-10-27,2025-26,brooklyn_nets,Brooklyn Nets,Day'Ron Sharpe,3,8,0.4427752958289024
+22500130,2025-10-29,2025-26,brooklyn_nets,Brooklyn Nets,Nic Claxton,3,4,0.3519035952520202
+22500149,2025-11-02,2025-26,brooklyn_nets,Brooklyn Nets,Terance Mann,3,3,0.392058395170786
+22500040,2025-11-14,2025-26,brooklyn_nets,Brooklyn Nets,Terance Mann,4,4,0.2572872193575145
+22500049,2025-11-21,2025-26,brooklyn_nets,Brooklyn Nets,Nic Claxton,3,3,0.4842764554155456
+22500350,2025-12-06,2025-26,brooklyn_nets,Brooklyn Nets,Nic Claxton,3,3,0.3206040035158241
+22501219,2025-12-14,2025-26,brooklyn_nets,Brooklyn Nets,Tyrese Martin,3,9,0.323241005203371
+22500610,2026-01-19,2025-26,brooklyn_nets,Brooklyn Nets,Ziaire Williams,3,6,0.3342372550298815
+22500694,2026-01-30,2025-26,brooklyn_nets,Brooklyn Nets,Day'Ron Sharpe,3,9,0.3867671763910895
+22501084,2026-03-29,2025-26,brooklyn_nets,Brooklyn Nets,Noah Clowney,4,9,0.3862545680118491
+22400088,2024-10-26,2024-25,charlotte_hornets,Charlotte Hornets,Seth Curry,3,5,0.2129587989433269
+22400003,2024-11-12,2024-25,charlotte_hornets,Charlotte Hornets,Moussa Diabaté,3,4,0.38117369857669
+22400229,2024-11-16,2024-25,charlotte_hornets,Charlotte Hornets,Moussa Diabaté,5,6,0.3582611371633855
+22400391,2024-12-23,2024-25,charlotte_hornets,Charlotte Hornets,Moussa Diabaté,3,8,0.5512937273495637
+22400428,2024-12-28,2024-25,charlotte_hornets,Charlotte Hornets,Seth Curry,3,6,0.2503251035023952
+22400502,2025-01-07,2024-25,charlotte_hornets,Charlotte Hornets,Nick Richards,3,5,0.5030027194414362
+22400599,2025-01-20,2024-25,charlotte_hornets,Charlotte Hornets,Mark Williams,4,4,0.311422149999749
+22400637,2025-01-25,2024-25,charlotte_hornets,Charlotte Hornets,Seth Curry,3,9,0.2384537520132509
+22400700,2025-02-03,2024-25,charlotte_hornets,Charlotte Hornets,Mark Williams,3,4,0.3792619120249094
+22400794,2025-02-20,2024-25,charlotte_hornets,Charlotte Hornets,Damion Baugh,4,3,0.380499914009725
+22400810,2025-02-22,2024-25,charlotte_hornets,Charlotte Hornets,Jusuf Nurkić,3,10,0.3754154119249819
+22400904,2025-03-07,2024-25,charlotte_hornets,Charlotte Hornets,Jusuf Nurkić,3,3,0.4088655411723492
+22400964,2025-03-14,2024-25,charlotte_hornets,Charlotte Hornets,Josh Green,4,5,0.5244418932520694
+22401085,2025-03-30,2024-25,charlotte_hornets,Charlotte Hornets,Jusuf Nurkić,3,7,0.388751795890326
+22500124,2025-10-28,2025-26,charlotte_hornets,Charlotte Hornets,Collin Sexton,3,5,0.3160645900886907
+22500150,2025-11-02,2025-26,charlotte_hornets,Charlotte Hornets,Moussa Diabaté,3,5,0.506600148071593
+22500168,2025-11-04,2025-26,charlotte_hornets,Charlotte Hornets,Collin Sexton,4,5,0.2466146147394525
+22500033,2025-11-07,2025-26,charlotte_hornets,Charlotte Hornets,Moussa Diabaté,4,6,0.1867515083036658
+22500256,2025-11-19,2025-26,charlotte_hornets,Charlotte Hornets,Pat Connaughton,4,9,0.3659139369489524
+22500061,2025-11-26,2025-26,charlotte_hornets,Charlotte Hornets,Collin Sexton,3,8,0.3975551129877824
+22500359,2025-12-07,2025-26,charlotte_hornets,Charlotte Hornets,Liam McNeeley,5,8,0.2323192174986927
+22500402,2025-12-22,2025-26,charlotte_hornets,Charlotte Hornets,Tre Mann,5,9,0.3701812109369279
+22500447,2025-12-29,2025-26,charlotte_hornets,Charlotte Hornets,Collin Sexton,3,7,0.4447243016041012
+22500712,2026-02-02,2025-26,charlotte_hornets,Charlotte Hornets,Grant Williams,3,6,0.3822591054290124
+22500737,2026-02-05,2025-26,charlotte_hornets,Charlotte Hornets,Josh Green,4,5,0.3674921936176232
+22500883,2026-03-03,2025-26,charlotte_hornets,Charlotte Hornets,Sion James,3,5,0.3005252851514602
+22500894,2026-03-04,2025-26,charlotte_hornets,Charlotte Hornets,Coby White,4,7,0.2999825090149872
+22500909,2026-03-06,2025-26,charlotte_hornets,Charlotte Hornets,LaMelo Ball,3,3,0.3801083931027097
+22500944,2026-03-10,2025-26,charlotte_hornets,Charlotte Hornets,Ryan Kalkbrenner,4,8,0.2132501525516138
+22501114,2026-04-02,2025-26,charlotte_hornets,Charlotte Hornets,LaMelo Ball,5,4,0.2536079029058725
+22400083,2024-10-25,2024-25,chicago_bulls,Chicago Bulls,Josh Giddey,4,6,0.2919566378204926
+22400108,2024-10-28,2024-25,chicago_bulls,Chicago Bulls,Jalen Smith,4,10,0.3890811807347703
+22400219,2024-11-13,2024-25,chicago_bulls,Chicago Bulls,Nikola Vučević,3,3,0.2064617583601964
+22400030,2024-11-22,2024-25,chicago_bulls,Chicago Bulls,Josh Giddey,4,5,0.3291468698221882
+22401212,2024-12-13,2024-25,chicago_bulls,Chicago Bulls,Josh Giddey,3,4,0.280830417392217
+22400442,2024-12-30,2024-25,chicago_bulls,Chicago Bulls,Patrick Williams,3,3,0.3307844216466984
+22400541,2025-01-12,2024-25,chicago_bulls,Chicago Bulls,Lonzo Ball,3,5,0.264071942730454
+22400584,2025-01-17,2024-25,chicago_bulls,Chicago Bulls,Coby White,3,3,0.3078764825124463
+22400628,2025-01-23,2024-25,chicago_bulls,Chicago Bulls,Ayo Dosunmu,3,6,0.3155736368350503
+22400723,2025-02-05,2024-25,chicago_bulls,Chicago Bulls,Jalen Smith,3,9,0.4675318904324244
+22400745,2025-02-08,2024-25,chicago_bulls,Chicago Bulls,Jalen Smith,3,8,0.4916789594901305
+22400886,2025-03-04,2024-25,chicago_bulls,Chicago Bulls,Zach Collins,3,5,0.3857336867935975
+22401007,2025-03-19,2024-25,chicago_bulls,Chicago Bulls,Josh Giddey,3,4,0.3458526906158295
+22401013,2025-03-20,2024-25,chicago_bulls,Chicago Bulls,Nikola Vučević,3,4,0.6236573102199505
+22401028,2025-03-22,2024-25,chicago_bulls,Chicago Bulls,Josh Giddey,3,3,0.4351706326410958
+22401042,2025-03-24,2024-25,chicago_bulls,Chicago Bulls,Jalen Smith,3,8,0.5725116226105035
+22401077,2025-03-29,2024-25,chicago_bulls,Chicago Bulls,Zach Collins,4,7,0.3069692745911962
+22401099,2025-04-01,2024-25,chicago_bulls,Chicago Bulls,Nikola Vučević,3,6,0.4253652062094333
+22401133,2025-04-06,2024-25,chicago_bulls,Chicago Bulls,Patrick Williams,4,5,0.3553358837393209
+22401160,2025-04-09,2024-25,chicago_bulls,Chicago Bulls,Nikola Vučević,3,4,0.4854882405543826
+22500023,2025-10-31,2025-26,chicago_bulls,Chicago Bulls,Ayo Dosunmu,3,3,0.4763494408645085
+22500071,2025-11-28,2025-26,chicago_bulls,Chicago Bulls,Tre Jones,3,5,0.4611199037984445
+22500314,2025-12-01,2025-26,chicago_bulls,Chicago Bulls,Nikola Vučević,3,4,0.3506138344583339
+22501209,2025-12-12,2025-26,chicago_bulls,Chicago Bulls,Zach Collins,3,8,0.5512372119313474
+22500480,2026-01-02,2025-26,chicago_bulls,Chicago Bulls,Ayo Dosunmu,3,8,0.4819334159307075
+22500603,2026-01-18,2025-26,chicago_bulls,Chicago Bulls,Nikola Vučević,3,5,0.3293460324549355
+22500614,2026-01-20,2025-26,chicago_bulls,Chicago Bulls,Tre Jones,5,6,0.4121130197126434
+22500647,2026-01-24,2025-26,chicago_bulls,Chicago Bulls,Jalen Smith,3,4,0.2933923157330452
+22500797,2026-02-19,2025-26,chicago_bulls,Chicago Bulls,Tre Jones,3,6,0.3312579542648697
+22500853,2026-02-26,2025-26,chicago_bulls,Chicago Bulls,Josh Giddey,3,3,0.3885536459003555
+22501011,2026-03-19,2025-26,chicago_bulls,Chicago Bulls,Nick Richards,3,4,0.3368415597517253
+22501193,2026-04-12,2025-26,chicago_bulls,Chicago Bulls,Yuki Kawamura,4,9,0.3628617879125309
+22400133,2024-11-01,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Caris LeVert,4,5,0.2935298489865849
+22400212,2024-11-11,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Georges Niang,4,10,0.367425972600758
+22400013,2024-11-15,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Caris LeVert,4,5,0.4275723752719917
+22400236,2024-11-17,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,4,4,0.4254508703385422
+22400252,2024-11-20,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,3,7,0.5980699417624527
+22400275,2024-11-24,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,3,3,0.4415151292666262
+22400325,2024-12-05,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Caris LeVert,3,5,0.3796219247204729
+22400424,2024-12-27,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,4,3,0.4855616793463639
+22400446,2024-12-30,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Dean Wade,4,3,0.3284844411819185
+22400517,2025-01-09,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,3,5,0.5405552368462381
+22400603,2025-01-20,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,3,5,0.4069677381577024
+22400615,2025-01-22,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,4,3,0.3518165742652213
+22400649,2025-01-27,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Evan Mobley,5,4,0.3891071785617172
+22400675,2025-01-30,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Ty Jerome,3,5,0.3957158007938768
+22400710,2025-02-04,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,3,3,0.4763587362746382
+22400755,2025-02-10,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,5,4,0.4465986777812925
+22400774,2025-02-12,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Evan Mobley,7,3,0.377959650773441
+22400791,2025-02-20,2024-25,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,4,6,0.5784300239708631
+22400904,2025-03-07,2024-25,cleveland_cavaliers,Cleveland Cavaliers,De'Andre Hunter,4,5,0.2835947867832161
+22401030,2025-03-23,2024-25,cleveland_cavaliers,Cleveland Cavaliers,De'Andre Hunter,3,4,0.3177801901725853
+22500029,2025-11-07,2025-26,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,5,3,0.4438751874297589
+22500284,2025-11-24,2025-26,cleveland_cavaliers,Cleveland Cavaliers,Evan Mobley,3,5,0.1445011655849999
+22500341,2025-12-05,2025-26,cleveland_cavaliers,Cleveland Cavaliers,Dean Wade,5,4,0.245526494871838
+22500465,2025-12-31,2025-26,cleveland_cavaliers,Cleveland Cavaliers,Evan Mobley,4,4,0.3587942017531749
+22500494,2026-01-04,2025-26,cleveland_cavaliers,Cleveland Cavaliers,Sam Merrill,3,4,0.3093360709670861
+22500542,2026-01-10,2025-26,cleveland_cavaliers,Cleveland Cavaliers,Darius Garland,4,3,0.3489688385786352
+22500671,2026-01-28,2025-26,cleveland_cavaliers,Cleveland Cavaliers,De'Andre Hunter,3,6,0.2231833020163918
+22500732,2026-02-04,2025-26,cleveland_cavaliers,Cleveland Cavaliers,Sam Merrill,3,5,0.3382324042246209
+22500835,2026-02-24,2025-26,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,3,3,0.3369835537559988
+22500869,2026-03-01,2025-26,cleveland_cavaliers,Cleveland Cavaliers,Evan Mobley,3,6,0.3351220511347579
+22500931,2026-03-09,2025-26,cleveland_cavaliers,Cleveland Cavaliers,Dean Wade,5,8,0.3654578911210045
+22500947,2026-03-11,2025-26,cleveland_cavaliers,Cleveland Cavaliers,Keon Ellis,3,4,0.4264550815013497
+22501117,2026-04-02,2025-26,cleveland_cavaliers,Cleveland Cavaliers,Jarrett Allen,4,6,0.3861273361192134
+22400110,2024-10-28,2024-25,dallas_mavericks,Dallas Mavericks,Dereck Lively II,4,5,0.3106820222231914
+22400007,2024-11-12,2024-25,dallas_mavericks,Dallas Mavericks,Daniel Gafford,4,6,0.2747802239267435
+22400024,2024-11-19,2024-25,dallas_mavericks,Dallas Mavericks,Naji Marshall,4,7,0.2579801853659524
+22400273,2024-11-24,2024-25,dallas_mavericks,Dallas Mavericks,Dereck Lively II,5,4,0.3459749841950567
+22400280,2024-11-25,2024-25,dallas_mavericks,Dallas Mavericks,Spencer Dinwiddie,3,3,0.2563031420300899
+22400292,2024-11-27,2024-25,dallas_mavericks,Dallas Mavericks,Spencer Dinwiddie,3,3,0.3668520822273379
+22400304,2024-11-30,2024-25,dallas_mavericks,Dallas Mavericks,Daniel Gafford,4,6,0.4012847675475119
+22400056,2024-12-03,2024-25,dallas_mavericks,Dallas Mavericks,Dereck Lively II,3,4,0.3438887173816504
+22400474,2025-01-03,2024-25,dallas_mavericks,Dallas Mavericks,Daniel Gafford,6,8,0.3088169400494305
+22400504,2025-01-07,2024-25,dallas_mavericks,Dallas Mavericks,Klay Thompson,5,6,0.2504686533575139
+22400521,2025-01-09,2024-25,dallas_mavericks,Dallas Mavericks,Dereck Lively II,3,3,0.5708336949867808
+22400614,2025-01-22,2024-25,dallas_mavericks,Dallas Mavericks,Daniel Gafford,3,4,0.2941479215350525
+22400635,2025-01-25,2024-25,dallas_mavericks,Dallas Mavericks,Daniel Gafford,3,3,0.4292058461159444
+22400657,2025-01-27,2024-25,dallas_mavericks,Dallas Mavericks,Daniel Gafford,4,6,0.494912089819926
+22400670,2025-01-29,2024-25,dallas_mavericks,Dallas Mavericks,Daniel Gafford,3,3,0.5244232874465783
+22400728,2025-02-06,2024-25,dallas_mavericks,Dallas Mavericks,Danté Exum,5,7,0.4386338134406162
+22400937,2025-03-10,2024-25,dallas_mavericks,Dallas Mavericks,Kessler Edwards,4,4,0.4483392602530651
+22400998,2025-03-19,2024-25,dallas_mavericks,Dallas Mavericks,Kai Jones,4,5,0.5217103391480554
+22500160,2025-11-03,2025-26,dallas_mavericks,Dallas Mavericks,Daniel Gafford,3,5,0.3816892483979731
+22500238,2025-11-16,2025-26,dallas_mavericks,Dallas Mavericks,Daniel Gafford,3,3,0.3976916476583197
+22500575,2026-01-14,2025-26,dallas_mavericks,Dallas Mavericks,Caleb Martin,3,6,0.4355107590848023
+22500583,2026-01-15,2025-26,dallas_mavericks,Dallas Mavericks,Moussa Cisse,7,6,0.3621415452289076
+22500648,2026-01-24,2025-26,dallas_mavericks,Dallas Mavericks,Brandon Williams,3,7,0.3353705239503371
+22500683,2026-01-29,2025-26,dallas_mavericks,Dallas Mavericks,Brandon Williams,3,7,0.3975104546619776
+22500701,2026-01-31,2025-26,dallas_mavericks,Dallas Mavericks,Brandon Williams,3,10,0.3849396310371098
+22500749,2026-02-07,2025-26,dallas_mavericks,Dallas Mavericks,Marvin Bagley III,4,4,0.380517044475024
+22500861,2026-02-27,2025-26,dallas_mavericks,Dallas Mavericks,Dwight Powell,3,6,0.3555075605317662
+22500965,2026-03-13,2025-26,dallas_mavericks,Dallas Mavericks,Max Christie,3,3,0.2743730320475691
+22500988,2026-03-16,2025-26,dallas_mavericks,Dallas Mavericks,P.J. Washington,3,3,0.3595231492593267
+22501059,2026-03-25,2025-26,dallas_mavericks,Dallas Mavericks,P.J. Washington,3,3,0.3543536956763771
+22500652,2026-03-31,2025-26,dallas_mavericks,Dallas Mavericks,Moussa Cisse,5,7,0.2659920584691539
+22501180,2026-04-10,2025-26,dallas_mavericks,Dallas Mavericks,Khris Middleton,3,5,0.319223701169482
+22400270,2024-11-23,2024-25,denver_nuggets,Denver Nuggets,Russell Westbrook,4,6,0.2979336398335889
+22400540,2025-01-12,2024-25,denver_nuggets,Denver Nuggets,Aaron Gordon,4,8,0.3246032249096515
+22400726,2025-02-05,2024-25,denver_nuggets,Denver Nuggets,Christian Braun,3,5,0.4207041330479923
+22400850,2025-02-28,2024-25,denver_nuggets,Denver Nuggets,Nikola Jokić,3,4,0.4956840406865717
+22500468,2025-12-31,2025-26,denver_nuggets,Denver Nuggets,Jonas Valančiūnas,3,7,0.3738192006108946
+22500507,2026-01-05,2025-26,denver_nuggets,Denver Nuggets,Zeke Nnaji,3,5,0.2595093606790828
+22500640,2026-01-23,2025-26,denver_nuggets,Denver Nuggets,Aaron Gordon,4,7,0.3408048455148109
+22500716,2026-02-03,2025-26,denver_nuggets,Denver Nuggets,Jonas Valančiūnas,5,8,0.3469980012764752
+22501197,2026-04-12,2025-26,denver_nuggets,Denver Nuggets,Jonas Valančiūnas,3,8,0.5414428937171907
+22400063,2024-10-23,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,5,4,0.2255118239361151
+22400120,2024-10-30,2024-25,detroit_pistons,Detroit Pistons,Tim Hardaway Jr.,4,5,0.2929325805825394
+22400151,2024-11-03,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,6,4,0.4333282617906603
+22400169,2024-11-06,2024-25,detroit_pistons,Detroit Pistons,Paul Reed,4,9,0.2823708576963476
+22400002,2024-11-12,2024-25,detroit_pistons,Detroit Pistons,Isaiah Stewart,5,7,0.2738311728919702
+22400244,2024-11-18,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,4,6,0.3705431777006359
+22400278,2024-11-25,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,3,5,0.4543759202026382
+22400045,2024-11-29,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,5,6,0.3999588730035141
+22400360,2024-12-19,2024-25,detroit_pistons,Detroit Pistons,Paul Reed,3,8,0.5130347007890994
+22400404,2024-12-23,2024-25,detroit_pistons,Detroit Pistons,Simone Fontecchio,5,8,0.3259478527429847
+22400455,2025-01-01,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,3,5,0.3265708525556653
+22400513,2025-01-08,2024-25,detroit_pistons,Detroit Pistons,Marcus Sasser,3,8,0.2519569505962353
+22400572,2025-01-16,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,3,4,0.5460861965002092
+22400586,2025-01-18,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,3,4,0.3774558407230086
+22400600,2025-01-20,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,3,3,0.6163300932747942
+22400649,2025-01-27,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,3,3,0.4319031489530732
+22400680,2025-01-31,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,3,3,0.5177581052803213
+22400752,2025-02-09,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,4,3,0.3886154979504668
+22400775,2025-02-12,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,4,3,0.5309684584111584
+22400802,2025-02-21,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,3,3,0.5286525687102317
+22400821,2025-02-24,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,3,4,0.3712375179955301
+22400850,2025-02-28,2024-25,detroit_pistons,Detroit Pistons,Simone Fontecchio,3,10,0.4132261853269897
+22400881,2025-03-03,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,3,5,0.4746609358942608
+22401029,2025-03-23,2024-25,detroit_pistons,Detroit Pistons,Marcus Sasser,3,6,0.4465922280213776
+22401067,2025-03-28,2024-25,detroit_pistons,Detroit Pistons,Jalen Duren,5,5,0.4422048619258654
+22401192,2025-04-13,2024-25,detroit_pistons,Detroit Pistons,Simone Fontecchio,4,7,0.3422942932510073
+22500093,2025-10-24,2025-26,detroit_pistons,Detroit Pistons,Paul Reed,4,6,0.2474769788224329
+22500283,2025-11-24,2025-26,detroit_pistons,Detroit Pistons,Jalen Duren,3,4,0.3288607769835096
+22500342,2025-12-05,2025-26,detroit_pistons,Detroit Pistons,Ronald Holland II,3,7,0.4419613037032659
+22500376,2025-12-18,2025-26,detroit_pistons,Detroit Pistons,Ronald Holland II,4,6,0.3398381399199962
+22500460,2025-12-30,2025-26,detroit_pistons,Detroit Pistons,Isaiah Stewart,3,8,0.5119515017668512
+22500668,2026-01-27,2025-26,detroit_pistons,Detroit Pistons,Ausar Thompson,3,7,0.5325028988511329
+22500716,2026-02-03,2025-26,detroit_pistons,Detroit Pistons,Jalen Duren,3,3,0.3407500114016758
+22500953,2026-03-12,2025-26,detroit_pistons,Detroit Pistons,Jalen Duren,5,10,0.4094662574254901
+22501080,2026-03-28,2025-26,detroit_pistons,Detroit Pistons,Paul Reed,4,9,0.3213337804634015
+22501131,2026-04-04,2025-26,detroit_pistons,Detroit Pistons,Ausar Thompson,4,5,0.2821808211270453
+22400084,2024-10-25,2024-25,golden_state_warriors,Golden State Warriors,Trayce Jackson-Davis,4,9,0.4262526714605698
+22400126,2024-10-30,2024-25,golden_state_warriors,Golden State Warriors,Trayce Jackson-Davis,3,7,0.3395693295591618
+22400019,2024-11-15,2024-25,golden_state_warriors,Golden State Warriors,Stephen Curry,3,4,0.3284509877278749
+22400403,2024-12-23,2024-25,golden_state_warriors,Golden State Warriors,Trayce Jackson-Davis,3,7,0.2719883429741543
+22400431,2024-12-28,2024-25,golden_state_warriors,Golden State Warriors,Trayce Jackson-Davis,3,6,0.4368597439180238
+22400485,2025-01-04,2024-25,golden_state_warriors,Golden State Warriors,Buddy Hield,4,6,0.2862830227484005
+22400518,2025-01-09,2024-25,golden_state_warriors,Golden State Warriors,Trayce Jackson-Davis,3,5,0.3897548575816734
+22400589,2025-01-18,2024-25,golden_state_warriors,Golden State Warriors,Kevon Looney,5,6,0.246584476366742
+22400628,2025-01-23,2024-25,golden_state_warriors,Golden State Warriors,Gui Santos,3,3,0.3796515077558027
+22400673,2025-01-29,2024-25,golden_state_warriors,Golden State Warriors,Kevon Looney,3,4,0.3755415069314156
+22400834,2025-02-25,2024-25,golden_state_warriors,Golden State Warriors,Moses Moody,5,4,0.3678499182274136
+22400875,2025-03-03,2024-25,golden_state_warriors,Golden State Warriors,Draymond Green,4,5,0.3907780514212052
+22400938,2025-03-10,2024-25,golden_state_warriors,Golden State Warriors,Buddy Hield,3,7,0.3623342797324217
+22400957,2025-03-13,2024-25,golden_state_warriors,Golden State Warriors,Buddy Hield,4,8,0.414386325260307
+22400990,2025-03-17,2024-25,golden_state_warriors,Golden State Warriors,Gary Payton II,3,5,0.3117855015371783
+22401047,2025-03-25,2024-25,golden_state_warriors,Golden State Warriors,Gui Santos,3,8,0.2516175699513128
+22401143,2025-04-06,2024-25,golden_state_warriors,Golden State Warriors,Gary Payton II,3,7,0.3818775538964338
+22401154,2025-04-08,2024-25,golden_state_warriors,Golden State Warriors,Trayce Jackson-Davis,3,8,0.3238396637759102
+22500006,2025-10-23,2025-26,golden_state_warriors,Golden State Warriors,Draymond Green,4,5,0.2608263907952133
+22500121,2025-10-27,2025-26,golden_state_warriors,Golden State Warriors,Jimmy Butler III,3,3,0.2756436739739444
+22500169,2025-11-04,2025-26,golden_state_warriors,Golden State Warriors,Quinten Post,3,4,0.37258369706157
+22500257,2025-11-19,2025-26,golden_state_warriors,Golden State Warriors,Pat Spencer,4,3,0.3994852635969215
+22500392,2025-12-20,2025-26,golden_state_warriors,Golden State Warriors,Will Richard,3,5,0.3488988249230657
+22500011,2025-12-25,2025-26,golden_state_warriors,Golden State Warriors,Al Horford,3,11,0.415147289902025
+22500462,2025-12-31,2025-26,golden_state_warriors,Golden State Warriors,Gui Santos,4,8,0.3567426158949399
+22500599,2026-01-17,2025-26,golden_state_warriors,Golden State Warriors,Buddy Hield,4,9,0.4250540964947612
+22500644,2026-01-25,2025-26,golden_state_warriors,Golden State Warriors,Brandin Podziemski,3,6,0.3302025587424737
+22500696,2026-01-30,2025-26,golden_state_warriors,Golden State Warriors,Gui Santos,3,4,0.29080087413035
+22500724,2026-02-03,2025-26,golden_state_warriors,Golden State Warriors,Moses Moody,3,7,0.3302900615707764
+22500739,2026-02-05,2025-26,golden_state_warriors,Golden State Warriors,Gary Payton II,4,8,0.2845256399515523
+22500799,2026-02-19,2025-26,golden_state_warriors,Golden State Warriors,Gary Payton II,4,9,0.4406416311343508
+22500981,2026-03-15,2025-26,golden_state_warriors,Golden State Warriors,Gary Payton II,4,5,0.2571668918729706
+22501044,2026-03-23,2025-26,golden_state_warriors,Golden State Warriors,Gary Payton II,4,7,0.4023306265345603
+22501154,2026-04-07,2025-26,golden_state_warriors,Golden State Warriors,Charles Bassey,4,4,0.4099432275307239
+22400129,2024-10-31,2024-25,houston_rockets,Houston Rockets,Tari Eason,4,6,0.3196108109755644
+22400248,2024-11-18,2024-25,houston_rockets,Houston Rockets,Tari Eason,5,4,0.3245286379501489
+22400439,2024-12-29,2024-25,houston_rockets,Houston Rockets,Alperen Sengun,3,3,0.4182962670833119
+22400532,2025-01-28,2024-25,houston_rockets,Houston Rockets,Jae'Sean Tate,3,6,0.4324268975410604
+22400741,2025-02-08,2024-25,houston_rockets,Houston Rockets,Amen Thompson,3,3,0.2101824023521573
+22400753,2025-02-09,2024-25,houston_rockets,Houston Rockets,Jeff Green,3,7,0.2906566438773483
+22400934,2025-03-10,2024-25,houston_rockets,Houston Rockets,Steven Adams,5,6,0.3925604784688852
+22400961,2025-03-14,2024-25,houston_rockets,Houston Rockets,Alperen Sengun,3,5,0.5059013822733633
+22400999,2025-03-19,2024-25,houston_rockets,Houston Rockets,Tari Eason,4,5,0.3454627054396404
+22401035,2025-03-23,2024-25,houston_rockets,Houston Rockets,Steven Adams,4,6,0.3954053731044099
+22401065,2025-03-27,2024-25,houston_rockets,Houston Rockets,Amen Thompson,3,6,0.4666732286558591
+22401088,2025-03-30,2024-25,houston_rockets,Houston Rockets,Amen Thompson,5,5,0.4031527573243363
+22401143,2025-04-06,2024-25,houston_rockets,Houston Rockets,Alperen Sengun,3,3,0.3739059201226735
+22500131,2025-10-29,2025-26,houston_rockets,Houston Rockets,Steven Adams,6,7,0.4393842879955354
+22500146,2025-11-01,2025-26,houston_rockets,Houston Rockets,Reed Sheppard,4,8,0.3223405598607983
+22500032,2025-11-07,2025-26,houston_rockets,Houston Rockets,Reed Sheppard,3,5,0.3589763489434527
+22500191,2025-11-09,2025-26,houston_rockets,Houston Rockets,Reed Sheppard,3,5,0.3712248015291488
+22500218,2025-11-12,2025-26,houston_rockets,Houston Rockets,Tari Eason,3,7,0.3767337185780443
+22500255,2025-11-19,2025-26,houston_rockets,Houston Rockets,Aaron Holiday,3,7,0.3317075916622474
+22500066,2025-11-26,2025-26,houston_rockets,Houston Rockets,Clint Capela,6,7,0.2193210851133882
+22500356,2025-12-06,2025-26,houston_rockets,Houston Rockets,Aaron Holiday,3,5,0.2963153299431438
+22500591,2026-01-16,2025-26,houston_rockets,Houston Rockets,Reed Sheppard,3,6,0.3855251333836858
+22500748,2026-02-07,2025-26,houston_rockets,Houston Rockets,Alperen Sengun,4,3,0.4840816706893059
+22500772,2026-02-10,2025-26,houston_rockets,Houston Rockets,Reed Sheppard,3,6,0.2830814587476778
+22500782,2026-02-11,2025-26,houston_rockets,Houston Rockets,Alperen Sengun,3,5,0.2323809444761265
+22501102,2026-03-31,2025-26,houston_rockets,Houston Rockets,Tari Eason,3,4,0.3357463925115865
+22501142,2026-04-05,2025-26,houston_rockets,Houston Rockets,Jabari Smith Jr.,3,4,0.4214961347056272
+22501178,2026-04-10,2025-26,houston_rockets,Houston Rockets,Alperen Sengun,3,4,0.4395723039406881
+22400102,2024-10-28,2024-25,indiana_pacers,Indiana Pacers,Obi Toppin,3,8,0.4552671541576832
+22400235,2024-11-17,2024-25,indiana_pacers,Indiana Pacers,Bennedict Mathurin,3,3,0.4044776589421918
+22400029,2024-11-22,2024-25,indiana_pacers,Indiana Pacers,T.J. McConnell,5,7,0.3581301738935505
+22400272,2024-11-24,2024-25,indiana_pacers,Indiana Pacers,Moses Brown,4,9,0.2321140074207996
+22400306,2024-12-01,2024-25,indiana_pacers,Indiana Pacers,Andrew Nembhard,5,8,0.3759010307214605
+22400054,2024-12-03,2024-25,indiana_pacers,Indiana Pacers,Obi Toppin,4,8,0.4496572611605855
+22401216,2024-12-15,2024-25,indiana_pacers,Indiana Pacers,Andrew Nembhard,3,5,0.3193971180026285
+22400389,2024-12-22,2024-25,indiana_pacers,Indiana Pacers,Ben Sheppard,3,9,0.3747573864092787
+22400495,2025-01-06,2024-25,indiana_pacers,Indiana Pacers,Pascal Siakam,3,5,0.4039506947059503
+22400543,2025-01-12,2024-25,indiana_pacers,Indiana Pacers,Myles Turner,3,3,0.240818773850603
+22400686,2025-02-01,2024-25,indiana_pacers,Indiana Pacers,Obi Toppin,3,8,0.4992992270766085
+22400742,2025-02-08,2024-25,indiana_pacers,Indiana Pacers,Thomas Bryant,5,5,0.3730496568132828
+22400868,2025-03-02,2024-25,indiana_pacers,Indiana Pacers,Tyrese Haliburton,3,4,0.3782529632140538
+22400942,2025-03-11,2024-25,indiana_pacers,Indiana Pacers,T.J. McConnell,5,7,0.4134002738423168
+22401061,2025-03-27,2024-25,indiana_pacers,Indiana Pacers,T.J. McConnell,8,8,0.3404919493338715
+22401189,2025-04-13,2024-25,indiana_pacers,Indiana Pacers,Tony Bradley,3,6,0.5097645246562841
+22500110,2025-10-26,2025-26,indiana_pacers,Indiana Pacers,RayJ Dennis,3,4,0.2979430405204737
+22500133,2025-10-29,2025-26,indiana_pacers,Indiana Pacers,RayJ Dennis,3,4,0.2674050289518974
+22500020,2025-10-31,2025-26,indiana_pacers,Indiana Pacers,Quenton Jackson,3,7,0.2400653122014253
+22500144,2025-11-01,2025-26,indiana_pacers,Indiana Pacers,Quenton Jackson,3,3,0.4988684021809337
+22500173,2025-11-05,2025-26,indiana_pacers,Indiana Pacers,Jay Huff,3,7,0.4176563011388225
+22500256,2025-11-19,2025-26,indiana_pacers,Indiana Pacers,T.J. McConnell,6,9,0.4457737855998334
+22500295,2025-11-29,2025-26,indiana_pacers,Indiana Pacers,Isaiah Jackson,3,6,0.3466923088959043
+22500325,2025-12-03,2025-26,indiana_pacers,Indiana Pacers,T.J. McConnell,4,9,0.4196531113594109
+22501211,2025-12-12,2025-26,indiana_pacers,Indiana Pacers,T.J. McConnell,3,8,0.4313122381399863
+22500659,2026-01-26,2025-26,indiana_pacers,Indiana Pacers,Bennedict Mathurin,3,5,0.2621540136619307
+22500672,2026-01-28,2025-26,indiana_pacers,Indiana Pacers,Jarace Walker,3,7,0.3201434211925595
+22500743,2026-02-06,2025-26,indiana_pacers,Indiana Pacers,Jarace Walker,3,4,0.1641124799999511
+22500771,2026-02-10,2025-26,indiana_pacers,Indiana Pacers,Quenton Jackson,3,5,0.2689505990255468
+22500795,2026-02-19,2025-26,indiana_pacers,Indiana Pacers,Jay Huff,3,8,0.2998971316698011
+22501109,2026-04-01,2025-26,indiana_pacers,Indiana Pacers,Jay Huff,3,9,0.3679860012753242
+22501175,2026-04-10,2025-26,indiana_pacers,Indiana Pacers,Micah Potter,4,6,0.2837005056398552
+22400222,2024-11-13,2024-25,los_angeles_clippers,LA Clippers,Kris Dunn,4,3,0.2955138749549273
+22400259,2024-11-20,2024-25,los_angeles_clippers,LA Clippers,Ivica Zubac,3,3,0.3327518468967479
+22401226,2024-12-16,2024-25,los_angeles_clippers,LA Clippers,Ivica Zubac,3,5,0.4195578385364723
+22400368,2024-12-19,2024-25,los_angeles_clippers,LA Clippers,Ivica Zubac,3,3,0.4236531893025931
+22400426,2024-12-27,2024-25,los_angeles_clippers,LA Clippers,Ivica Zubac,3,3,0.2346484600086898
+22400500,2025-01-06,2024-25,los_angeles_clippers,LA Clippers,Ivica Zubac,3,3,0.4415586718024554
+22400553,2025-01-13,2024-25,los_angeles_clippers,LA Clippers,Ivica Zubac,3,3,0.5240163682261683
+22400671,2025-01-29,2024-25,los_angeles_clippers,LA Clippers,Ivica Zubac,3,3,0.5819405366154995
+22400697,2025-02-02,2024-25,los_angeles_clippers,LA Clippers,Kevin Porter Jr.,3,8,0.3607325898949927
+22400715,2025-02-04,2024-25,los_angeles_clippers,LA Clippers,Bones Hyland,3,11,0.41149102440821
+22400733,2025-02-06,2024-25,los_angeles_clippers,LA Clippers,Ivica Zubac,4,3,0.3092400752948464
+22400783,2025-02-12,2024-25,los_angeles_clippers,LA Clippers,Kris Dunn,5,6,0.4451767701296579
+22400842,2025-02-26,2024-25,los_angeles_clippers,LA Clippers,Bogdan Bogdanović,5,6,0.3918979001258574
+22400927,2025-03-09,2024-25,los_angeles_clippers,LA Clippers,Derrick Jones Jr.,3,5,0.3732545468001588
+22400960,2025-03-14,2024-25,los_angeles_clippers,LA Clippers,Ivica Zubac,3,3,0.3793829209209388
+22401056,2025-03-26,2024-25,los_angeles_clippers,LA Clippers,Ivica Zubac,4,4,0.2881242471402042
+22401091,2025-03-31,2024-25,los_angeles_clippers,LA Clippers,Ivica Zubac,4,3,0.5188703637583588
+22401111,2025-04-02,2024-25,los_angeles_clippers,LA Clippers,Bogdan Bogdanović,4,5,0.3845202729524521
+22401166,2025-04-09,2024-25,los_angeles_clippers,LA Clippers,Ivica Zubac,3,3,0.4411285986193821
+22500127,2025-10-28,2025-26,los_angeles_clippers,LA Clippers,Ivica Zubac,3,4,0.317946262802241
+22500059,2025-11-25,2025-26,los_angeles_clippers,LA Clippers,John Collins,4,3,0.3079936476038388
+22500327,2025-12-03,2025-26,los_angeles_clippers,LA Clippers,Ivica Zubac,5,3,0.4580643386985835
+22500422,2025-12-23,2025-26,los_angeles_clippers,LA Clippers,John Collins,3,3,0.2732215907527325
+22500461,2025-12-30,2025-26,los_angeles_clippers,LA Clippers,John Collins,3,6,0.3829003136823818
+22500522,2026-01-07,2025-26,los_angeles_clippers,LA Clippers,Ivica Zubac,3,5,0.4427180030042252
+22500535,2026-01-09,2025-26,los_angeles_clippers,LA Clippers,John Collins,4,4,0.3360913975533636
+22500882,2026-03-02,2025-26,los_angeles_clippers,LA Clippers,Kris Dunn,3,3,0.4082506631597578
+22500918,2026-03-07,2025-26,los_angeles_clippers,LA Clippers,Derrick Jones Jr.,4,3,0.4007615682138426
+22500935,2026-03-09,2025-26,los_angeles_clippers,LA Clippers,Brook Lopez,4,5,0.3014559339154793
+22501062,2026-03-25,2025-26,los_angeles_clippers,LA Clippers,Bennedict Mathurin,3,4,0.3067157651803129
+22501104,2026-03-31,2025-26,los_angeles_clippers,LA Clippers,John Collins,4,4,0.2732870066569039
+22501119,2026-04-02,2025-26,los_angeles_clippers,LA Clippers,John Collins,3,5,0.3883646087456406
+22501141,2026-04-05,2025-26,los_angeles_clippers,LA Clippers,Kobe Sanders,3,8,0.4425599480285344
+22501199,2026-04-12,2025-26,los_angeles_clippers,LA Clippers,Bogdan Bogdanović,3,10,0.4531819413397741
+22400570,2025-01-15,2024-25,los_angeles_lakers,Los Angeles Lakers,Austin Reaves,5,4,0.4621028406736093
+22400835,2025-02-25,2024-25,los_angeles_lakers,Los Angeles Lakers,Luka Dončić,3,4,0.3978093037700503
+22400890,2025-03-04,2024-25,los_angeles_lakers,Los Angeles Lakers,Jaxson Hayes,3,6,0.476235076748759
+22400977,2025-03-16,2024-25,los_angeles_lakers,Los Angeles Lakers,Jaxson Hayes,3,4,0.2182206944055223
+22401006,2025-03-19,2024-25,los_angeles_lakers,Los Angeles Lakers,Gabe Vincent,4,7,0.2262797719750531
+22401135,2025-04-06,2024-25,los_angeles_lakers,Los Angeles Lakers,Gabe Vincent,5,6,0.2323764645625685
+22401185,2025-04-11,2024-25,los_angeles_lakers,Los Angeles Lakers,Dorian Finney-Smith,3,4,0.403953598796223
+22500045,2025-11-14,2025-26,los_angeles_lakers,Los Angeles Lakers,Deandre Ayton,3,3,0.3935189612186855
+22500231,2025-11-15,2025-26,los_angeles_lakers,Los Angeles Lakers,Deandre Ayton,3,5,0.2981191380137923
+22500308,2025-11-30,2025-26,los_angeles_lakers,Los Angeles Lakers,Deandre Ayton,3,4,0.5471090254005178
+22501228,2025-12-14,2025-26,los_angeles_lakers,Los Angeles Lakers,Deandre Ayton,3,5,0.4575674352805339
+22500446,2025-12-28,2025-26,los_angeles_lakers,Los Angeles Lakers,Nick Smith Jr.,3,6,0.3107282342802416
+22500753,2026-02-07,2025-26,los_angeles_lakers,Los Angeles Lakers,Jarred Vanderbilt,5,9,0.3685218601978025
+22500891,2026-03-03,2025-26,los_angeles_lakers,Los Angeles Lakers,Marcus Smart,5,4,0.1852765832999792
+22500974,2026-03-14,2025-26,los_angeles_lakers,Los Angeles Lakers,Marcus Smart,3,4,0.5243678675958747
+22501052,2026-03-25,2025-26,los_angeles_lakers,Los Angeles Lakers,Jaxson Hayes,4,3,0.361036746206104
+22400019,2024-11-15,2024-25,memphis_grizzlies,Memphis Grizzlies,Zach Edey,4,5,0.4174973444972176
+22400282,2024-11-25,2024-25,memphis_grizzlies,Memphis Grizzlies,Santi Aldama,3,5,0.4800805033991682
+22400042,2024-11-29,2024-25,memphis_grizzlies,Memphis Grizzlies,Santi Aldama,3,3,0.4596538053118599
+22401220,2024-12-15,2024-25,memphis_grizzlies,Memphis Grizzlies,Zach Edey,3,5,0.501099236734365
+22400453,2024-12-31,2024-25,memphis_grizzlies,Memphis Grizzlies,Luke Kennard,3,5,0.4294042191441633
+22400551,2025-01-13,2024-25,memphis_grizzlies,Memphis Grizzlies,Jaylen Wells,4,4,0.3389945492601866
+22400567,2025-01-15,2024-25,memphis_grizzlies,Memphis Grizzlies,Santi Aldama,3,5,0.47221242503962
+22400699,2025-02-02,2024-25,memphis_grizzlies,Memphis Grizzlies,Zach Edey,4,8,0.3369335939957345
+22400703,2025-02-03,2024-25,memphis_grizzlies,Memphis Grizzlies,Zach Edey,4,4,0.4887069503898539
+22400722,2025-02-05,2024-25,memphis_grizzlies,Memphis Grizzlies,Zach Edey,4,3,0.5495297112953251
+22400746,2025-02-08,2024-25,memphis_grizzlies,Memphis Grizzlies,Santi Aldama,3,4,0.2667470109290891
+22400767,2025-02-11,2024-25,memphis_grizzlies,Memphis Grizzlies,Brandon Clarke,4,7,0.2949848805394384
+22400783,2025-02-12,2024-25,memphis_grizzlies,Memphis Grizzlies,GG Jackson,3,6,0.3640879896579403
+22400798,2025-02-21,2024-25,memphis_grizzlies,Memphis Grizzlies,Brandon Clarke,4,5,0.2888981786117196
+22401050,2025-03-25,2024-25,memphis_grizzlies,Memphis Grizzlies,Scotty Pippen Jr.,3,3,0.4231440116559961
+22401093,2025-03-31,2024-25,memphis_grizzlies,Memphis Grizzlies,Jaren Jackson Jr.,3,3,0.4121584259038313
+22401180,2025-04-11,2024-25,memphis_grizzlies,Memphis Grizzlies,Luke Kennard,4,7,0.268264790021643
+22401194,2025-04-13,2024-25,memphis_grizzlies,Memphis Grizzlies,Jay Huff,4,6,0.4649621358030865
+22500137,2025-10-29,2025-26,memphis_grizzlies,Memphis Grizzlies,Santi Aldama,3,3,0.2161392231816976
+22500273,2025-11-22,2025-26,memphis_grizzlies,Memphis Grizzlies,Zach Edey,3,3,0.4279715988231886
+22500065,2025-11-26,2025-26,memphis_grizzlies,Memphis Grizzlies,Zach Edey,3,3,0.4862959618469661
+22500322,2025-12-02,2025-26,memphis_grizzlies,Memphis Grizzlies,John Konchar,4,8,0.4172592572757043
+22500419,2025-12-23,2025-26,memphis_grizzlies,Memphis Grizzlies,GG Jackson,3,5,0.4537532082749003
+22500485,2026-01-02,2025-26,memphis_grizzlies,Memphis Grizzlies,Jock Landale,5,8,0.45563117922615
+22500639,2026-01-23,2025-26,memphis_grizzlies,Memphis Grizzlies,Cam Spencer,3,4,0.4597408298285712
+22500787,2026-02-11,2025-26,memphis_grizzlies,Memphis Grizzlies,Jaylen Wells,3,3,0.5012323084438275
+22501111,2026-03-12,2025-26,memphis_grizzlies,Memphis Grizzlies,Taylor Hendricks,4,8,0.440660948547572
+22501056,2026-03-25,2025-26,memphis_grizzlies,Memphis Grizzlies,DeJon Jarreau,3,9,0.3978364806659601
+22501093,2026-03-30,2025-26,memphis_grizzlies,Memphis Grizzlies,GG Jackson,3,9,0.3795619217690166
+22400009,2024-11-15,2024-25,miami_heat,Miami Heat,Kevin Love,3,9,0.5457663981501534
+22400235,2024-11-17,2024-25,miami_heat,Miami Heat,Duncan Robinson,3,3,0.345592373659377
+22400375,2024-12-20,2024-25,miami_heat,Miami Heat,Dru Smith,3,4,0.34720834418306
+22400501,2025-01-06,2024-25,miami_heat,Miami Heat,Jaime Jaquez Jr.,4,3,0.3400309688600147
+22400508,2025-01-07,2024-25,miami_heat,Miami Heat,Duncan Robinson,5,8,0.3533272012135189
+22400721,2025-02-05,2024-25,miami_heat,Miami Heat,Bam Adebayo,4,3,0.3424953576441262
+22400841,2025-02-26,2024-25,miami_heat,Miami Heat,Haywood Highsmith,6,7,0.4146876181232987
+22400854,2025-02-28,2024-25,miami_heat,Miami Heat,Alec Burks,4,7,0.2450997520766747
+22400907,2025-03-07,2024-25,miami_heat,Miami Heat,Duncan Robinson,3,5,0.2278355750468948
+22400916,2025-03-08,2024-25,miami_heat,Miami Heat,Terry Rozier,4,5,0.278433040189171
+22401000,2025-03-19,2024-25,miami_heat,Miami Heat,Kel'el Ware,3,3,0.2781909349191318
+22401106,2025-04-02,2024-25,miami_heat,Miami Heat,Kyle Anderson,3,7,0.2376432501532029
+22401114,2025-04-03,2024-25,miami_heat,Miami Heat,Kel'el Ware,3,3,0.2961396502897968
+22500094,2025-10-24,2025-26,miami_heat,Miami Heat,Kel'el Ware,3,7,0.4203977190073026
+22500108,2025-10-26,2025-26,miami_heat,Miami Heat,Jaime Jaquez Jr.,3,4,0.3346767499447363
+22500141,2025-10-30,2025-26,miami_heat,Miami Heat,Simone Fontecchio,3,5,0.2991440699117118
+22500201,2025-11-10,2025-26,miami_heat,Miami Heat,Kel'el Ware,4,4,0.4205824640894491
+22500217,2025-11-12,2025-26,miami_heat,Miami Heat,Kel'el Ware,4,5,0.3694071081945842
+22500244,2025-11-17,2025-26,miami_heat,Miami Heat,Kel'el Ware,3,5,0.5591627994831175
+22500275,2025-11-23,2025-26,miami_heat,Miami Heat,Kel'el Ware,3,6,0.5790851352532861
+22500313,2025-12-01,2025-26,miami_heat,Miami Heat,Davion Mitchell,5,4,0.4952486072321626
+22500450,2025-12-29,2025-26,miami_heat,Miami Heat,Jaime Jaquez Jr.,3,4,0.4113013071243139
+22500497,2026-01-04,2025-26,miami_heat,Miami Heat,Kel'el Ware,3,7,0.4355406753349372
+22500763,2026-02-09,2025-26,miami_heat,Miami Heat,Kasparas Jakučionis,3,3,0.3210634628315852
+22500784,2026-02-11,2025-26,miami_heat,Miami Heat,Kel'el Ware,3,4,0.5286110942280333
+22500805,2026-02-20,2025-26,miami_heat,Miami Heat,Kel'el Ware,4,8,0.3544556723608037
+22500837,2026-02-24,2025-26,miami_heat,Miami Heat,Andrew Wiggins,3,4,0.2949354694953685
+22500864,2026-02-28,2025-26,miami_heat,Miami Heat,Kel'el Ware,5,5,0.4479314115142089
+22501010,2026-03-19,2025-26,miami_heat,Miami Heat,Kel'el Ware,5,6,0.3363874466525578
+22501055,2026-03-25,2025-26,miami_heat,Miami Heat,Kel'el Ware,6,7,0.4635598265533289
+22501068,2026-03-27,2025-26,miami_heat,Miami Heat,Kasparas Jakučionis,3,9,0.2966183176424383
+22501091,2026-03-30,2025-26,miami_heat,Miami Heat,Pelle Larsson,3,3,0.4084097582476365
+22400268,2024-11-23,2024-25,milwaukee_bucks,Milwaukee Bucks,Gary Trent Jr.,3,4,0.3340170706122433
+22401201,2024-12-10,2024-25,milwaukee_bucks,Milwaukee Bucks,Bobby Portis,3,4,0.4840929634647515
+22400450,2024-12-31,2024-25,milwaukee_bucks,Milwaukee Bucks,Bobby Portis,4,3,0.3691281828636145
+22400497,2025-01-06,2024-25,milwaukee_bucks,Milwaukee Bucks,Giannis Antetokounmpo,5,3,0.4063531639521937
+22400516,2025-01-08,2024-25,milwaukee_bucks,Milwaukee Bucks,Gary Trent Jr.,4,6,0.3880935568908358
+22400539,2025-01-12,2024-25,milwaukee_bucks,Milwaukee Bucks,Khris Middleton,3,4,0.4534537762171458
+22400684,2025-01-31,2024-25,milwaukee_bucks,Milwaukee Bucks,Khris Middleton,3,6,0.4731345220883064
+22400760,2025-02-10,2024-25,milwaukee_bucks,Milwaukee Bucks,Taurean Prince,3,3,0.3971500190078928
+22500241,2025-11-17,2025-26,milwaukee_bucks,Milwaukee Bucks,Giannis Antetokounmpo,3,8,0.3842649296798725
+22500331,2025-12-03,2025-26,milwaukee_bucks,Milwaukee Bucks,Jericho Sims,4,5,0.4548410801620691
+22501135,2026-04-05,2025-26,milwaukee_bucks,Milwaukee Bucks,Myles Turner,3,9,0.4835080167082117
+22501160,2026-04-08,2025-26,milwaukee_bucks,Milwaukee Bucks,Cormac Ryan,3,6,0.3307644899427659
+22400062,2024-10-22,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Nickeil Alexander-Walker,3,5,0.2107778981985935
+22400076,2024-10-24,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Naz Reid,3,7,0.4818574252473213
+22400181,2024-11-07,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Rudy Gobert,3,4,0.4423862066709769
+22400206,2024-11-10,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Naz Reid,3,8,0.3567698108960781
+22400271,2024-11-24,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Rob Dillingham,3,8,0.2706817897656038
+22400037,2024-11-26,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Naz Reid,3,6,0.3261200197828776
+22400294,2024-11-27,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Nickeil Alexander-Walker,3,8,0.3460390667308677
+22401218,2024-12-15,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Jaden McDaniels,3,5,0.2627952315520585
+22400367,2024-12-19,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Josh Minott,5,10,0.3415136236927776
+22400464,2025-01-02,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Jaden McDaniels,3,3,0.2825877229080118
+22400505,2025-01-07,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Naz Reid,3,7,0.2998855730671812
+22400590,2025-01-18,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Rudy Gobert,3,4,0.3278666553037896
+22400601,2025-01-20,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Rob Dillingham,3,8,0.4812009163784894
+22400614,2025-01-22,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Mike Conley,3,4,0.4264612192960858
+22400634,2025-01-25,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Rudy Gobert,3,4,0.5076907958678509
+22400820,2025-02-23,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Jaylen Clark,5,7,0.5156020338305418
+22400925,2025-03-09,2024-25,minnesota_timberwolves,Minnesota Timberwolves,Rudy Gobert,4,8,0.4797711112624039
+22500019,2025-10-24,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Donte DiVincenzo,3,3,0.366112028736823
+22500110,2025-10-26,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Rudy Gobert,4,4,0.3876589188140458
+22500044,2025-11-14,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Donte DiVincenzo,3,5,0.2722335170221301
+22500232,2025-11-15,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Naz Reid,3,5,0.3013366450629069
+22500365,2025-12-08,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Rudy Gobert,3,6,0.3609054006610688
+22501220,2025-12-14,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Donte DiVincenzo,4,5,0.3273473404876227
+22500368,2025-12-17,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Rudy Gobert,3,3,0.4906341798882276
+22500385,2025-12-19,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Bones Hyland,5,7,0.2651430606802649
+22500452,2025-12-29,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Julius Randle,3,3,0.3089767454695324
+22500530,2026-01-08,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Donte DiVincenzo,4,5,0.3324482374012234
+22500566,2026-01-13,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Joan Beringer,5,3,0.2772108807245216
+22500700,2026-01-31,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Naz Reid,3,4,0.2828395778361638
+22500744,2026-02-06,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Rudy Gobert,4,3,0.4416827028404638
+22500765,2026-02-09,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Jaden McDaniels,3,3,0.4558650340660372
+22500783,2026-02-11,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Rudy Gobert,3,6,0.3475704222342434
+22500857,2026-02-26,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Ayo Dosunmu,3,7,0.3052689445491081
+22500871,2026-03-01,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Bones Hyland,3,8,0.2816023831498363
+22500976,2026-03-15,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Ayo Dosunmu,3,3,0.3069138382382617
+22501035,2026-03-22,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Rudy Gobert,5,6,0.2173804737548667
+22501058,2026-03-25,2025-26,minnesota_timberwolves,Minnesota Timberwolves,Rudy Gobert,4,8,0.4344233865350437
+22400164,2024-11-04,2024-25,new_orleans_pelicans,New Orleans Pelicans,Jose Alvarado,3,3,0.2131600581269306
+22400308,2024-12-01,2024-25,new_orleans_pelicans,New Orleans Pelicans,Yves Missi,3,5,0.2868259642484073
+22400330,2024-12-05,2024-25,new_orleans_pelicans,New Orleans Pelicans,Trey Murphy III,3,4,0.2518382333106455
+22400342,2024-12-07,2024-25,new_orleans_pelicans,New Orleans Pelicans,Trey Murphy III,3,4,0.3209352572127087
+22400354,2024-12-08,2024-25,new_orleans_pelicans,New Orleans Pelicans,Yves Missi,3,5,0.390572616211069
+22400605,2025-01-20,2024-25,new_orleans_pelicans,New Orleans Pelicans,Jordan Hawkins,4,6,0.4112609121565037
+22400973,2025-03-15,2024-25,new_orleans_pelicans,New Orleans Pelicans,Kelly Olynyk,4,4,0.3265083739265191
+22401016,2025-03-21,2024-25,new_orleans_pelicans,New Orleans Pelicans,Antonio Reeves,3,10,0.3463880627438366
+22500168,2025-11-04,2025-26,new_orleans_pelicans,New Orleans Pelicans,Derik Queen,5,6,0.4616657367433604
+22500289,2025-11-24,2025-26,new_orleans_pelicans,New Orleans Pelicans,Yves Missi,6,5,0.4381820082883033
+22500766,2026-02-09,2025-26,new_orleans_pelicans,New Orleans Pelicans,Karlo Matković,4,9,0.3406390956377498
+22501005,2026-03-18,2025-26,new_orleans_pelicans,New Orleans Pelicans,Dejounte Murray,3,3,0.2798759552372882
+22501128,2026-04-03,2025-26,new_orleans_pelicans,New Orleans Pelicans,Jordan Hawkins,3,7,0.3222266452048712
+22501153,2026-04-07,2025-26,new_orleans_pelicans,New Orleans Pelicans,Jordan Hawkins,3,7,0.4174659686137521
+22400161,2024-11-04,2024-25,new_york_knicks,New York Knicks,Karl-Anthony Towns,3,5,0.4928459291923652
+22400189,2024-11-08,2024-25,new_york_knicks,New York Knicks,Jalen Brunson,3,5,0.1831944057113495
+22400004,2024-11-12,2024-25,new_york_knicks,New York Knicks,Josh Hart,5,3,0.4559722952403104
+22400308,2024-12-01,2024-25,new_york_knicks,New York Knicks,Karl-Anthony Towns,3,5,0.3718457238606223
+22400473,2025-01-03,2024-25,new_york_knicks,New York Knicks,Karl-Anthony Towns,5,3,0.3679051805023079
+22400856,2025-02-28,2024-25,new_york_knicks,New York Knicks,Miles McBride,3,6,0.3101999278408201
+22400953,2025-03-12,2024-25,new_york_knicks,New York Knicks,Karl-Anthony Towns,3,4,0.2500606254694194
+22400984,2025-03-17,2024-25,new_york_knicks,New York Knicks,Josh Hart,3,5,0.5255794544954987
+22401003,2025-03-19,2024-25,new_york_knicks,New York Knicks,Mitchell Robinson,4,8,0.4402015389692203
+22401026,2025-03-22,2024-25,new_york_knicks,New York Knicks,OG Anunoby,3,4,0.2595829649605049
+22401056,2025-03-26,2024-25,new_york_knicks,New York Knicks,Cameron Payne,4,7,0.3976457610129437
+22401070,2025-03-28,2024-25,new_york_knicks,New York Knicks,Landry Shamet,4,6,0.3636969838804602
+22401098,2025-04-01,2024-25,new_york_knicks,New York Knicks,Mitchell Robinson,3,7,0.4246895215399524
+22401140,2025-04-06,2024-25,new_york_knicks,New York Knicks,Karl-Anthony Towns,3,3,0.347275744928924
+22401175,2025-04-11,2024-25,new_york_knicks,New York Knicks,Miles McBride,5,7,0.2856777648715396
+22500003,2025-10-22,2025-26,new_york_knicks,New York Knicks,Miles McBride,5,5,0.3163587852188003
+22500192,2025-11-09,2025-26,new_york_knicks,New York Knicks,Mitchell Robinson,7,8,0.3763425076937793
+22500244,2025-11-17,2025-26,new_york_knicks,New York Knicks,Karl-Anthony Towns,3,5,0.3298846592193117
+22501202,2025-12-09,2025-26,new_york_knicks,New York Knicks,Karl-Anthony Towns,4,5,0.3927616679791026
+22500372,2025-12-18,2025-26,new_york_knicks,New York Knicks,Tyler Kolek,4,6,0.4015477046195345
+22500382,2025-12-19,2025-26,new_york_knicks,New York Knicks,Mitchell Robinson,3,6,0.6251456593776866
+22500454,2025-12-29,2025-26,new_york_knicks,New York Knicks,Mohamed Diawara,3,6,0.3533457464241693
+22500479,2026-01-02,2025-26,new_york_knicks,New York Knicks,Ariel Hukporti,5,5,0.2949100628515199
+22500487,2026-01-03,2025-26,new_york_knicks,New York Knicks,Miles McBride,3,5,0.3714124609167263
+22500551,2026-01-11,2025-26,new_york_knicks,New York Knicks,Karl-Anthony Towns,3,6,0.3817461026408493
+22500584,2026-01-15,2025-26,new_york_knicks,New York Knicks,Karl-Anthony Towns,4,5,0.4210754885601847
+22500665,2026-01-27,2025-26,new_york_knicks,New York Knicks,Mitchell Robinson,6,7,0.2260055198654073
+22500690,2026-01-30,2025-26,new_york_knicks,New York Knicks,Karl-Anthony Towns,4,5,0.487044681044925
+22500835,2026-02-24,2025-26,new_york_knicks,New York Knicks,Mitchell Robinson,4,8,0.3237830782460039
+22500911,2026-03-06,2025-26,new_york_knicks,New York Knicks,Karl-Anthony Towns,3,3,0.3914187969852764
+22500962,2026-03-13,2025-26,new_york_knicks,New York Knicks,Mitchell Robinson,3,4,0.5735386342525924
+22500981,2026-03-15,2025-26,new_york_knicks,New York Knicks,Jordan Clarkson,3,6,0.4177387889955095
+22501102,2026-03-31,2025-26,new_york_knicks,New York Knicks,Jose Alvarado,3,9,0.391593869073207
+22501003,2026-04-01,2025-26,new_york_knicks,New York Knicks,Karl-Anthony Towns,3,5,0.5316900260273125
+22400091,2024-10-26,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Chet Holmgren,3,4,0.488895559310334
+22400150,2024-11-02,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Joe,4,7,0.3042188418331238
+22400177,2024-11-06,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Aaron Wiggins,4,8,0.3897972041726777
+22400192,2024-11-08,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Ajay Mitchell,5,7,0.3764650118834872
+22400256,2024-11-20,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Hartenstein,4,4,0.4486686427470196
+22400299,2024-11-27,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Hartenstein,3,5,0.2858644510517854
+22400310,2024-12-01,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Hartenstein,3,4,0.3539870118869868
+22400055,2024-12-03,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Joe,3,7,0.3741931986973633
+22400328,2024-12-05,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Kenrich Williams,4,10,0.4215409056196798
+22400342,2024-12-07,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Hartenstein,5,4,0.4523491390096329
+22401230,2024-12-14,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Luguentz Dort,4,5,0.314354227161929
+22400375,2024-12-20,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Hartenstein,4,3,0.3938460352145141
+22400400,2024-12-23,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Ajay Mitchell,3,6,0.5151701313900628
+22400428,2024-12-28,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Hartenstein,4,5,0.3855081608039378
+22400473,2025-01-03,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Aaron Wiggins,3,6,0.2993555855794754
+22400647,2025-01-26,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Hartenstein,4,3,0.4141411041480825
+22400691,2025-02-01,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Hartenstein,5,4,0.4209010246083016
+22400804,2025-02-21,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Joe,4,8,0.3833526804915524
+22400840,2025-02-26,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Chet Holmgren,3,3,0.5476485386572333
+22400920,2025-03-09,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Chet Holmgren,3,5,0.376877550114186
+22401036,2025-03-23,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Jaylin Williams,5,9,0.2932120944003611
+22401052,2025-03-25,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Alex Caruso,3,7,0.3859968784625385
+22401079,2025-03-29,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Joe,3,5,0.3468614917618599
+22401108,2025-04-02,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Chet Holmgren,3,3,0.4092637202665186
+22401153,2025-04-08,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Hartenstein,7,4,0.3281525446252083
+22401181,2025-04-11,2024-25,oklahoma_city_thunder,Oklahoma City Thunder,Jaylin Williams,5,7,0.4344578896954028
+22500148,2025-11-02,2025-26,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Hartenstein,3,6,0.5054682249399056
+22500194,2025-11-09,2025-26,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Hartenstein,4,4,0.3187869874563066
+22500247,2025-11-17,2025-26,oklahoma_city_thunder,Oklahoma City Thunder,Isaiah Hartenstein,4,5,0.3625766109609846
+22500064,2025-11-26,2025-26,oklahoma_city_thunder,Oklahoma City Thunder,Ajay Mitchell,3,6,0.3275750523267094
+22500406,2025-12-22,2025-26,oklahoma_city_thunder,Oklahoma City Thunder,Luguentz Dort,4,3,0.3178173650135828
+22500499,2026-01-04,2025-26,oklahoma_city_thunder,Oklahoma City Thunder,Chet Holmgren,3,3,0.3416056711981517
+22500506,2026-01-05,2025-26,oklahoma_city_thunder,Oklahoma City Thunder,Chet Holmgren,3,3,0.3038890412374826
+22500536,2026-01-09,2025-26,oklahoma_city_thunder,Oklahoma City Thunder,Kenrich Williams,3,5,0.454949319522951
+22500769,2026-02-09,2025-26,oklahoma_city_thunder,Oklahoma City Thunder,Alex Caruso,3,6,0.4824900618417725
+22500920,2026-03-07,2025-26,oklahoma_city_thunder,Oklahoma City Thunder,Kenrich Williams,3,7,0.2224249112282157
+22501155,2026-04-07,2025-26,oklahoma_city_thunder,Oklahoma City Thunder,Chet Holmgren,3,4,0.3840531030484965
+22400010,2024-11-15,2024-25,orlando_magic,Orlando Magic,Jonathan Isaac,4,5,0.1822067168633041
+22400305,2024-12-01,2024-25,orlando_magic,Orlando Magic,Goga Bitadze,4,3,0.3822646515927813
+22400322,2024-12-04,2024-25,orlando_magic,Orlando Magic,Jonathan Isaac,3,9,0.5300158853751644
+22400333,2024-12-06,2024-25,orlando_magic,Orlando Magic,Moritz Wagner,3,6,0.3065875854769272
+22401201,2024-12-10,2024-25,orlando_magic,Orlando Magic,Moritz Wagner,3,6,0.2887796691401454
+22400411,2024-12-26,2024-25,orlando_magic,Orlando Magic,Goga Bitadze,4,3,0.3530503663216781
+22400770,2025-02-12,2024-25,orlando_magic,Orlando Magic,Wendell Carter Jr.,5,3,0.1726507229822681
+22400790,2025-02-20,2024-25,orlando_magic,Orlando Magic,Cole Anthony,3,4,0.2460059369122872
+22400979,2025-03-16,2024-25,orlando_magic,Orlando Magic,Anthony Black,3,6,0.344534588344789
+22400999,2025-03-19,2024-25,orlando_magic,Orlando Magic,Goga Bitadze,3,5,0.4150438668679845
+22401038,2025-03-24,2024-25,orlando_magic,Orlando Magic,Anthony Black,3,5,0.379194982093882
+22401045,2025-03-25,2024-25,orlando_magic,Orlando Magic,Caleb Houstan,4,6,0.3181239236048304
+22401074,2025-03-29,2024-25,orlando_magic,Orlando Magic,Goga Bitadze,4,8,0.341240683607004
+22400988,2025-04-01,2024-25,orlando_magic,Orlando Magic,Kentavious Caldwell-Pope,3,3,0.2543520436332255
+22401149,2025-04-08,2024-25,orlando_magic,Orlando Magic,Wendell Carter Jr.,3,3,0.4177671481051895
+22401186,2025-04-13,2024-25,orlando_magic,Orlando Magic,Jonathan Isaac,5,6,0.3961106386878396
+22500081,2025-10-22,2025-26,orlando_magic,Orlando Magic,Jalen Suggs,5,9,0.4585905240589687
+22500129,2025-10-29,2025-26,orlando_magic,Orlando Magic,Tristan da Silva,3,7,0.3133549635973301
+22500138,2025-10-30,2025-26,orlando_magic,Orlando Magic,Wendell Carter Jr.,5,5,0.313474825733975
+22500200,2025-11-10,2025-26,orlando_magic,Orlando Magic,Wendell Carter Jr.,3,5,0.2705505617056664
+22500215,2025-11-12,2025-26,orlando_magic,Orlando Magic,Goga Bitadze,6,8,0.217985240262369
+22500236,2025-11-16,2025-26,orlando_magic,Orlando Magic,Wendell Carter Jr.,4,4,0.1660033621993678
+22500277,2025-11-23,2025-26,orlando_magic,Orlando Magic,Noah Penda,6,6,0.398370526832521
+22500058,2025-11-25,2025-26,orlando_magic,Orlando Magic,Wendell Carter Jr.,5,4,0.3211540020769555
+22500393,2025-12-20,2025-26,orlando_magic,Orlando Magic,Noah Penda,5,5,0.3045623513182572
+22500407,2025-12-22,2025-26,orlando_magic,Orlando Magic,Anthony Black,3,3,0.2516319643954079
+22500464,2025-12-31,2025-26,orlando_magic,Orlando Magic,Goga Bitadze,4,7,0.3179620361121298
+22500495,2026-01-04,2025-26,orlando_magic,Orlando Magic,Wendell Carter Jr.,4,4,0.3182089708454911
+22500511,2026-01-06,2025-26,orlando_magic,Orlando Magic,Jonathan Isaac,8,11,0.3228446602328496
+22500521,2026-01-07,2025-26,orlando_magic,Orlando Magic,Tristan da Silva,3,6,0.3691908130826091
+22500548,2026-01-11,2025-26,orlando_magic,Orlando Magic,Goga Bitadze,5,5,0.4867577830101689
+22500646,2026-01-24,2025-26,orlando_magic,Orlando Magic,Moritz Wagner,4,9,0.2601039082793777
+22500734,2026-02-05,2025-26,orlando_magic,Orlando Magic,Jalen Suggs,4,3,0.4782723519915886
+22500750,2026-02-07,2025-26,orlando_magic,Orlando Magic,Jalen Suggs,5,4,0.2895208221862878
+22500764,2026-02-09,2025-26,orlando_magic,Orlando Magic,Moritz Wagner,3,8,0.4719592539233833
+22500800,2026-02-19,2025-26,orlando_magic,Orlando Magic,Jett Howard,4,10,0.4323503743658289
+22500840,2026-02-24,2025-26,orlando_magic,Orlando Magic,Wendell Carter Jr.,3,3,0.3036918294292502
+22501024,2026-03-21,2025-26,orlando_magic,Orlando Magic,Jevon Carter,3,7,0.3095704709270821
+22501049,2026-03-24,2025-26,orlando_magic,Orlando Magic,Jamal Cain,3,4,0.3114993881319875
+22501099,2026-03-31,2025-26,orlando_magic,Orlando Magic,Wendell Carter Jr.,4,4,0.2849195621070736
+22501127,2026-04-03,2025-26,orlando_magic,Orlando Magic,Franz Wagner,5,8,0.341891822291865
+22501159,2026-04-08,2025-26,orlando_magic,Orlando Magic,Goga Bitadze,4,4,0.5116619518156147
+22501177,2026-04-10,2025-26,orlando_magic,Orlando Magic,Goga Bitadze,3,10,0.5044750990053359
+22400255,2024-11-20,2024-25,philadelphia_76ers,Philadelphia 76ers,Andre Drummond,4,10,0.3581501160194458
+22400301,2024-11-30,2024-25,philadelphia_76ers,Philadelphia 76ers,Ricky Council IV,3,5,0.3347238385443576
+22400322,2024-12-04,2024-25,philadelphia_76ers,Philadelphia 76ers,Guerschon Yabusele,3,3,0.2068678882545827
+22401209,2024-12-13,2024-25,philadelphia_76ers,Philadelphia 76ers,KJ Martin,4,5,0.3739962593869007
+22400394,2024-12-23,2024-25,philadelphia_76ers,Philadelphia 76ers,Guerschon Yabusele,3,4,0.3708790509002996
+22400478,2025-01-04,2024-25,philadelphia_76ers,Philadelphia 76ers,Caleb Martin,3,5,0.3121559114279346
+22400555,2025-01-14,2024-25,philadelphia_76ers,Philadelphia 76ers,Guerschon Yabusele,3,3,0.3680726817033774
+22400588,2025-01-18,2024-25,philadelphia_76ers,Philadelphia 76ers,Adem Bona,4,8,0.2082510360357555
+22400660,2025-01-28,2024-25,philadelphia_76ers,Philadelphia 76ers,Ricky Council IV,3,7,0.3229556883891863
+22400947,2025-03-12,2024-25,philadelphia_76ers,Philadelphia 76ers,Adem Bona,3,7,0.4186958682143258
+22401031,2025-03-23,2024-25,philadelphia_76ers,Philadelphia 76ers,Jeff Dowtin Jr.,3,5,0.2875040447751224
+22500102,2025-10-25,2025-26,philadelphia_76ers,Philadelphia 76ers,Kelly Oubre Jr.,4,3,0.3533534241224525
+22500149,2025-11-02,2025-26,philadelphia_76ers,Philadelphia 76ers,Quentin Grimes,3,4,0.3929069009366029
+22500171,2025-11-05,2025-26,philadelphia_76ers,Philadelphia 76ers,Trendon Watford,4,6,0.310395758541271
+22500184,2025-11-08,2025-26,philadelphia_76ers,Philadelphia 76ers,Trendon Watford,3,3,0.546710264560898
+22500318,2025-12-02,2025-26,philadelphia_76ers,Philadelphia 76ers,Andre Drummond,3,9,0.3537491022874457
+22501217,2025-12-14,2025-26,philadelphia_76ers,Philadelphia 76ers,Joel Embiid,3,4,0.4130084460930543
+22500533,2026-01-09,2025-26,philadelphia_76ers,Philadelphia 76ers,Paul George,3,3,0.3544612564617171
+22500724,2026-02-03,2025-26,philadelphia_76ers,Philadelphia 76ers,Adem Bona,6,8,0.2747342380640826
+22500794,2026-02-19,2025-26,philadelphia_76ers,Philadelphia 76ers,Andre Drummond,5,5,0.1939916393597368
+22501030,2026-03-21,2025-26,philadelphia_76ers,Philadelphia 76ers,Trendon Watford,3,6,0.5198540455656295
+22501121,2026-04-03,2025-26,philadelphia_76ers,Philadelphia 76ers,Joel Embiid,4,4,0.3420573831923035
+22501175,2026-04-10,2025-26,philadelphia_76ers,Philadelphia 76ers,Andre Drummond,5,5,0.3728412999746719
+22501191,2026-04-12,2025-26,philadelphia_76ers,Philadelphia 76ers,Andre Drummond,4,5,0.3677918020363465
+22400095,2024-10-26,2024-25,phoenix_suns,Phoenix Suns,Jusuf Nurkić,3,4,0.2980784055509043
+22400149,2024-11-02,2024-25,phoenix_suns,Phoenix Suns,Grayson Allen,3,7,0.3677672057939182
+22400167,2024-11-04,2024-25,phoenix_suns,Phoenix Suns,Jusuf Nurkić,3,5,0.3869732371022704
+22400178,2024-11-06,2024-25,phoenix_suns,Phoenix Suns,Jusuf Nurkić,3,3,0.5292016349259282
+22400006,2024-11-12,2024-25,phoenix_suns,Phoenix Suns,Mason Plumlee,3,4,0.3199379515677911
+22400303,2024-11-30,2024-25,phoenix_suns,Phoenix Suns,Tyus Jones,3,4,0.3218064962274968
+22401214,2024-12-13,2024-25,phoenix_suns,Phoenix Suns,Tyus Jones,3,3,0.4872357299253035
+22401219,2024-12-15,2024-25,phoenix_suns,Phoenix Suns,Tyus Jones,3,4,0.3008023802490679
+22400573,2025-01-16,2024-25,phoenix_suns,Phoenix Suns,Grayson Allen,3,5,0.2974476820664989
+22400586,2025-01-18,2024-25,phoenix_suns,Phoenix Suns,Nick Richards,3,4,0.5540803099497353
+22400659,2025-01-27,2024-25,phoenix_suns,Phoenix Suns,Grayson Allen,3,5,0.3187402716679164
+22400889,2025-03-04,2024-25,phoenix_suns,Phoenix Suns,Nick Richards,3,6,0.3016937361720548
+22400909,2025-03-07,2024-25,phoenix_suns,Phoenix Suns,Mason Plumlee,3,5,0.4834291081613861
+22400921,2025-03-09,2024-25,phoenix_suns,Phoenix Suns,Nick Richards,5,8,0.2707127786145401
+22400977,2025-03-16,2024-25,phoenix_suns,Phoenix Suns,Ryan Dunn,3,5,0.2424911688538642
+22400991,2025-03-17,2024-25,phoenix_suns,Phoenix Suns,Monté Morris,5,11,0.3298699176700027
+22401164,2025-04-09,2024-25,phoenix_suns,Phoenix Suns,Collin Gillespie,3,6,0.4688176071480483
+22500221,2025-11-12,2025-26,phoenix_suns,Phoenix Suns,Jordan Goodwin,4,7,0.2473082596430044
+22500226,2025-11-13,2025-26,phoenix_suns,Phoenix Suns,Oso Ighodaro,3,3,0.5156038836710448
+22500254,2025-11-18,2025-26,phoenix_suns,Phoenix Suns,Mark Williams,3,7,0.2917222027415734
+22500053,2025-11-21,2025-26,phoenix_suns,Phoenix Suns,Mark Williams,3,6,0.3160738567018765
+22500434,2025-12-27,2025-26,phoenix_suns,Phoenix Suns,Collin Gillespie,3,4,0.2862485445354692
+22500465,2025-12-31,2025-26,phoenix_suns,Phoenix Suns,Jamaree Bouyea,3,9,0.3937969691618557
+22500524,2026-01-07,2025-26,phoenix_suns,Phoenix Suns,Mark Williams,4,4,0.4051605044661638
+22500564,2026-01-13,2025-26,phoenix_suns,Phoenix Suns,Mark Williams,4,4,0.3503769948917362
+22500596,2026-01-17,2025-26,phoenix_suns,Phoenix Suns,Jordan Goodwin,4,8,0.2398285254340842
+22500610,2026-01-19,2025-26,phoenix_suns,Phoenix Suns,Collin Gillespie,3,6,0.4217216414942589
+22500739,2026-02-05,2025-26,phoenix_suns,Phoenix Suns,Mark Williams,3,7,0.2385524746840231
+22500773,2026-02-10,2025-26,phoenix_suns,Phoenix Suns,Oso Ighodaro,7,6,0.284267108885349
+22500811,2026-02-21,2025-26,phoenix_suns,Phoenix Suns,Oso Ighodaro,5,5,0.3203301435653277
+22500892,2026-03-03,2025-26,phoenix_suns,Phoenix Suns,Oso Ighodaro,5,5,0.4552472994095405
+22500941,2026-03-10,2025-26,phoenix_suns,Phoenix Suns,Collin Gillespie,4,4,0.2606309441755472
+22501050,2026-03-24,2025-26,phoenix_suns,Phoenix Suns,Royce O'Neale,4,4,0.4067326492484352
+22400112,2024-10-28,2024-25,portland_trail_blazers,Portland Trail Blazers,Jabari Walker,3,8,0.4606042456414304
+22400149,2024-11-02,2024-25,portland_trail_blazers,Portland Trail Blazers,Dalano Banton,4,9,0.4090144429636368
+22400193,2024-11-08,2024-25,portland_trail_blazers,Portland Trail Blazers,Robert Williams III,3,9,0.2903974678583912
+22400239,2024-11-17,2024-25,portland_trail_blazers,Portland Trail Blazers,Robert Williams III,3,7,0.4548625021196554
+22400256,2024-11-20,2024-25,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,5,8,0.1862648610409174
+22400049,2024-11-29,2024-25,portland_trail_blazers,Portland Trail Blazers,Dalano Banton,4,6,0.4026326268975867
+22400339,2024-12-06,2024-25,portland_trail_blazers,Portland Trail Blazers,Kris Murray,3,7,0.4082383012150581
+22400434,2024-12-28,2024-25,portland_trail_blazers,Portland Trail Blazers,Deandre Ayton,3,4,0.4483683779929344
+22400514,2025-01-08,2024-25,portland_trail_blazers,Portland Trail Blazers,Deandre Ayton,6,6,0.3641708402944754
+22400521,2025-01-09,2024-25,portland_trail_blazers,Portland Trail Blazers,Scoot Henderson,3,5,0.2663874268771331
+22400622,2025-01-23,2024-25,portland_trail_blazers,Portland Trail Blazers,Robert Williams III,6,6,0.3057414434298833
+22400630,2025-01-24,2024-25,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,6,7,0.2791819699280187
+22400647,2025-01-26,2024-25,portland_trail_blazers,Portland Trail Blazers,Toumani Camara,3,3,0.3240455921144585
+22400662,2025-01-28,2024-25,portland_trail_blazers,Portland Trail Blazers,Deandre Ayton,3,4,0.3861496260053261
+22400839,2025-02-26,2024-25,portland_trail_blazers,Portland Trail Blazers,Jabari Walker,5,7,0.3079613522858779
+22400876,2025-03-03,2024-25,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,3,5,0.3906580853870977
+22401008,2025-03-19,2024-25,portland_trail_blazers,Portland Trail Blazers,Duop Reath,5,7,0.3030723800288709
+22401022,2025-03-21,2024-25,portland_trail_blazers,Portland Trail Blazers,Dalano Banton,3,5,0.3184992256819274
+22401183,2025-04-11,2024-25,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,3,4,0.4218164284529732
+22401199,2025-04-13,2024-25,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,5,6,0.4002196251596294
+22500122,2025-10-27,2025-26,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,4,6,0.4411897761913964
+22500180,2025-11-05,2025-26,portland_trail_blazers,Portland Trail Blazers,Duop Reath,6,7,0.3304641493761555
+22500263,2025-11-19,2025-26,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,3,5,0.5327356298169617
+22500288,2025-11-24,2025-26,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,3,5,0.3964864994901236
+22500380,2025-12-18,2025-26,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,4,4,0.3723313054209419
+22500394,2025-12-20,2025-26,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,4,5,0.4607502982220372
+22500420,2025-12-23,2025-26,portland_trail_blazers,Portland Trail Blazers,Caleb Love,3,4,0.2170498746629172
+22500444,2025-12-28,2025-26,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,4,3,0.430753203267383
+22500540,2026-01-09,2025-26,portland_trail_blazers,Portland Trail Blazers,Sidy Cissoko,5,6,0.2974965235627544
+22500551,2026-01-11,2025-26,portland_trail_blazers,Portland Trail Blazers,Robert Williams III,4,8,0.3784535580966311
+22500585,2026-01-15,2025-26,portland_trail_blazers,Portland Trail Blazers,Rayan Rupert,3,9,0.4049422188425354
+22500642,2026-01-23,2025-26,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,4,4,0.35618135584327
+22500660,2026-01-26,2025-26,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,5,3,0.2554614539865107
+22500710,2026-02-01,2025-26,portland_trail_blazers,Portland Trail Blazers,Robert Williams III,6,9,0.2286295293736999
+22500725,2026-02-03,2025-26,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,4,5,0.4460326795291615
+22500745,2026-02-06,2025-26,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,4,3,0.4772446280822651
+22500853,2026-02-26,2025-26,portland_trail_blazers,Portland Trail Blazers,Robert Williams III,3,6,0.651261658143703
+22500910,2026-03-06,2025-26,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,3,4,0.4221779250440227
+22500929,2026-03-08,2025-26,portland_trail_blazers,Portland Trail Blazers,Robert Williams III,5,8,0.284070199234985
+22500944,2026-03-10,2025-26,portland_trail_blazers,Portland Trail Blazers,Scoot Henderson,3,7,0.385439020834754
+22501020,2026-03-20,2025-26,portland_trail_blazers,Portland Trail Blazers,Donovan Clingan,3,5,0.3944169087354788
+22501074,2026-03-27,2025-26,portland_trail_blazers,Portland Trail Blazers,Jerami Grant,3,5,0.2205326534633472
+22501183,2026-04-10,2025-26,portland_trail_blazers,Portland Trail Blazers,Robert Williams III,3,8,0.421286888946757
+22400143,2024-11-02,2024-25,sacramento_kings,Sacramento Kings,Domantas Sabonis,4,3,0.4304481864635195
+22400180,2024-11-06,2024-25,sacramento_kings,Sacramento Kings,Domantas Sabonis,4,4,0.4221879196824299
+22400059,2024-12-03,2024-25,sacramento_kings,Sacramento Kings,Malik Monk,3,3,0.3641449417742778
+22400357,2024-12-08,2024-25,sacramento_kings,Sacramento Kings,Doug McDermott,4,10,0.4370905721795398
+22401225,2024-12-16,2024-25,sacramento_kings,Sacramento Kings,Malik Monk,3,3,0.3851505429244451
+22400462,2025-01-01,2024-25,sacramento_kings,Sacramento Kings,Domantas Sabonis,4,3,0.5086205498500286
+22400558,2025-01-14,2024-25,sacramento_kings,Sacramento Kings,Keon Ellis,3,5,0.3816453333026902
+22400576,2025-01-16,2024-25,sacramento_kings,Sacramento Kings,Domantas Sabonis,3,4,0.4635363860770067
+22400626,2025-01-23,2024-25,sacramento_kings,Sacramento Kings,Doug McDermott,4,8,0.4643236563885515
+22400785,2025-02-13,2024-25,sacramento_kings,Sacramento Kings,Domantas Sabonis,3,4,0.5281859493489248
+22400843,2025-02-26,2024-25,sacramento_kings,Sacramento Kings,Jonas Valančiūnas,4,8,0.435917505966295
+22400862,2025-03-01,2024-25,sacramento_kings,Sacramento Kings,Jonas Valančiūnas,4,5,0.5043577443703955
+22400910,2025-03-07,2024-25,sacramento_kings,Sacramento Kings,Jonas Valančiūnas,4,5,0.4100909768608136
+22401009,2025-03-19,2024-25,sacramento_kings,Sacramento Kings,Trey Lyles,4,5,0.2144944672762002
+22500142,2025-11-01,2025-26,sacramento_kings,Sacramento Kings,Domantas Sabonis,3,4,0.3403185179313842
+22500038,2025-11-07,2025-26,sacramento_kings,Sacramento Kings,Drew Eubanks,3,6,0.2916461687416232
+22500261,2025-11-19,2025-26,sacramento_kings,Sacramento Kings,Malik Monk,3,5,0.2675606825050779
+22500068,2025-11-26,2025-26,sacramento_kings,Sacramento Kings,Precious Achiuwa,4,5,0.2928462928824423
+22500077,2025-11-28,2025-26,sacramento_kings,Sacramento Kings,Russell Westbrook,4,4,0.3921941170416602
+22501208,2025-12-11,2025-26,sacramento_kings,Sacramento Kings,Devin Carter,3,8,0.3399119643717932
+22500401,2025-12-21,2025-26,sacramento_kings,Sacramento Kings,Russell Westbrook,4,5,0.4776604535405911
+22500576,2026-01-14,2025-26,sacramento_kings,Sacramento Kings,Precious Achiuwa,3,3,0.4895064048047415
+22500592,2026-01-16,2025-26,sacramento_kings,Sacramento Kings,Precious Achiuwa,3,4,0.2327148604594613
+22500626,2026-01-21,2025-26,sacramento_kings,Sacramento Kings,Dennis Schröder,4,9,0.3365192565686858
+22500786,2026-02-11,2025-26,sacramento_kings,Sacramento Kings,Doug McDermott,3,8,0.4286254826302414
+22500930,2026-03-08,2025-26,sacramento_kings,Sacramento Kings,Russell Westbrook,3,4,0.4110163417227099
+22501033,2026-03-22,2025-26,sacramento_kings,Sacramento Kings,Precious Achiuwa,4,4,0.2949889766735257
+22501078,2026-03-28,2025-26,sacramento_kings,Sacramento Kings,Precious Achiuwa,3,7,0.3531081891981009
+22501141,2026-04-05,2025-26,sacramento_kings,Sacramento Kings,Dylan Cardwell,3,5,0.3911857800176916
+22400146,2024-11-02,2024-25,san_antonio_spurs,San Antonio Spurs,Chris Paul,4,3,0.3265826532320661
+22400183,2024-11-07,2024-25,san_antonio_spurs,San Antonio Spurs,Zach Collins,3,9,0.4393910514317154
+22400354,2024-12-08,2024-25,san_antonio_spurs,San Antonio Spurs,Charles Bassey,3,8,0.5889038051991988
+22400621,2025-01-23,2024-25,san_antonio_spurs,San Antonio Spurs,Harrison Barnes,3,3,0.4238203985989347
+22400863,2025-03-01,2024-25,san_antonio_spurs,San Antonio Spurs,Jeremy Sochan,4,5,0.3245335548896284
+22400964,2025-03-14,2024-25,san_antonio_spurs,San Antonio Spurs,Sandro Mamukelashvili,4,9,0.3430559088174781
+22401110,2025-04-02,2024-25,san_antonio_spurs,San Antonio Spurs,Sandro Mamukelashvili,3,6,0.4287557925933841
+22500341,2025-12-05,2025-26,san_antonio_spurs,San Antonio Spurs,Keldon Johnson,3,6,0.2837509184254581
+22500370,2025-12-18,2025-26,san_antonio_spurs,San Antonio Spurs,Victor Wembanyama,4,9,0.4062985261564624
+22500476,2026-01-02,2025-26,san_antonio_spurs,San Antonio Spurs,Keldon Johnson,4,5,0.2666894293930308
+22501197,2026-04-12,2025-26,san_antonio_spurs,San Antonio Spurs,Keldon Johnson,3,7,0.4659437801853534
+22400054,2024-12-03,2024-25,toronto_raptors,Toronto Raptors,Jakob Poeltl,3,4,0.2479175398670226
+22400397,2024-12-23,2024-25,toronto_raptors,Toronto Raptors,Chris Boucher,3,7,0.4869097534893576
+22400459,2025-01-01,2024-25,toronto_raptors,Toronto Raptors,Immanuel Quickley,3,5,0.359487768594008
+22400534,2025-01-11,2024-25,toronto_raptors,Toronto Raptors,Chris Boucher,3,6,0.3594934277930938
+22400562,2025-01-15,2024-25,toronto_raptors,Toronto Raptors,Jakob Poeltl,3,3,0.2565013154948494
+22400608,2025-01-21,2024-25,toronto_raptors,Toronto Raptors,Kelly Olynyk,5,6,0.2858690993509965
+22400623,2025-01-23,2024-25,toronto_raptors,Toronto Raptors,Chris Boucher,3,7,0.2830808415748295
+22400682,2025-01-31,2024-25,toronto_raptors,Toronto Raptors,Immanuel Quickley,3,9,0.4131978570514103
+22400697,2025-02-02,2024-25,toronto_raptors,Toronto Raptors,Ochai Agbaji,4,6,0.3649172672475824
+22400753,2025-02-09,2024-25,toronto_raptors,Toronto Raptors,Jamal Shead,3,6,0.2225264547302588
+22400870,2025-03-02,2024-25,toronto_raptors,Toronto Raptors,Jakob Poeltl,3,5,0.3725171722651439
+22400932,2025-03-10,2024-25,toronto_raptors,Toronto Raptors,Orlando Robinson,5,6,0.3357883667917256
+22400991,2025-03-17,2024-25,toronto_raptors,Toronto Raptors,Orlando Robinson,4,9,0.2101081489168665
+22401005,2025-03-20,2024-25,toronto_raptors,Toronto Raptors,Jakob Poeltl,3,5,0.3273889337379018
+22401087,2025-03-30,2024-25,toronto_raptors,Toronto Raptors,Orlando Robinson,4,8,0.3258515226970866
+22401099,2025-04-01,2024-25,toronto_raptors,Toronto Raptors,A.J. Lawson,3,10,0.4291522914368227
+22500082,2025-10-22,2025-26,toronto_raptors,Toronto Raptors,Gradey Dick,3,5,0.4791034292205254
+22500111,2025-10-26,2025-26,toronto_raptors,Toronto Raptors,Sandro Mamukelashvili,3,6,0.2430017440954647
+22500152,2025-11-02,2025-26,toronto_raptors,Toronto Raptors,Scottie Barnes,3,3,0.3547716877423864
+22500030,2025-11-07,2025-26,toronto_raptors,Toronto Raptors,Immanuel Quickley,3,3,0.1772174995474516
+22500050,2025-11-21,2025-26,toronto_raptors,Toronto Raptors,Sandro Mamukelashvili,3,6,0.4441753980958646
+22500319,2025-12-02,2025-26,toronto_raptors,Toronto Raptors,Gradey Dick,4,8,0.420607926966592
+22500358,2025-12-07,2025-26,toronto_raptors,Toronto Raptors,Sandro Mamukelashvili,3,5,0.3539983969273407
+22501202,2025-12-09,2025-26,toronto_raptors,Toronto Raptors,Ja'Kobe Walter,3,7,0.3374979941254589
+22500425,2025-12-26,2025-26,toronto_raptors,Toronto Raptors,Ja'Kobe Walter,3,8,0.4352271654597425
+22500451,2025-12-29,2025-26,toronto_raptors,Toronto Raptors,Gradey Dick,3,9,0.2643458061896734
+22500468,2025-12-31,2025-26,toronto_raptors,Toronto Raptors,Scottie Barnes,3,3,0.4794684635950691
+22500488,2026-01-03,2025-26,toronto_raptors,Toronto Raptors,Sandro Mamukelashvili,5,4,0.4651674281811868
+22500504,2026-01-05,2025-26,toronto_raptors,Toronto Raptors,Collin Murray-Boyles,3,4,0.4418674957509109
+22500590,2026-01-16,2025-26,toronto_raptors,Toronto Raptors,Jamal Shead,3,3,0.236122234757827
+22500626,2026-01-21,2025-26,toronto_raptors,Toronto Raptors,Sandro Mamukelashvili,3,4,0.3293005752657466
+22500736,2026-02-05,2025-26,toronto_raptors,Toronto Raptors,Sandro Mamukelashvili,3,6,0.3122159790728628
+22500834,2026-02-24,2025-26,toronto_raptors,Toronto Raptors,Scottie Barnes,4,4,0.3271835523161134
+22500865,2026-02-28,2025-26,toronto_raptors,Toronto Raptors,Jakob Poeltl,4,5,0.4890309630903016
+22500924,2026-03-08,2025-26,toronto_raptors,Toronto Raptors,Jakob Poeltl,3,5,0.3298625992979942
+22500978,2026-03-15,2025-26,toronto_raptors,Toronto Raptors,Jakob Poeltl,3,4,0.5470895702743936
+22501002,2026-03-18,2025-26,toronto_raptors,Toronto Raptors,Jakob Poeltl,5,8,0.3302186743123566
+22501043,2026-03-23,2025-26,toronto_raptors,Toronto Raptors,Scottie Barnes,4,5,0.4183328505807277
+22501165,2026-04-09,2025-26,toronto_raptors,Toronto Raptors,Collin Murray-Boyles,3,6,0.5049489010400916
+22400070,2024-10-23,2024-25,utah_jazz,Utah Jazz,Walker Kessler,3,3,0.5138479068347926
+22400160,2024-11-04,2024-25,utah_jazz,Utah Jazz,Walker Kessler,4,3,0.4318119093931654
+22400228,2024-11-14,2024-25,utah_jazz,Utah Jazz,Keyonte George,4,3,0.3089272312862614
+22400264,2024-11-23,2024-25,utah_jazz,Utah Jazz,John Collins,3,4,0.3117494365287458
+22400298,2024-11-27,2024-25,utah_jazz,Utah Jazz,Walker Kessler,3,4,0.3543353372004734
+22401226,2024-12-16,2024-25,utah_jazz,Utah Jazz,Collin Sexton,3,5,0.319069827865033
+22400445,2024-12-30,2024-25,utah_jazz,Utah Jazz,Johnny Juzang,4,6,0.2971337141072564
+22400481,2025-01-04,2024-25,utah_jazz,Utah Jazz,Walker Kessler,5,5,0.5420677723362866
+22400533,2025-01-11,2024-25,utah_jazz,Utah Jazz,Svi Mykhailiuk,4,8,0.3485596552898992
+22400546,2025-01-12,2024-25,utah_jazz,Utah Jazz,Svi Mykhailiuk,3,10,0.3703296648369991
+22400605,2025-01-20,2024-25,utah_jazz,Utah Jazz,Walker Kessler,3,4,0.4015975733804157
+22400643,2025-01-25,2024-25,utah_jazz,Utah Jazz,Walker Kessler,3,5,0.2151431938157995
+22400658,2025-01-27,2024-25,utah_jazz,Utah Jazz,Brice Sensabaugh,3,9,0.3647562738410202
+22400740,2025-02-07,2024-25,utah_jazz,Utah Jazz,Walker Kessler,3,3,0.4777906808502806
+22400751,2025-02-08,2024-25,utah_jazz,Utah Jazz,Johnny Juzang,3,6,0.2862950747855046
+22400872,2025-03-02,2024-25,utah_jazz,Utah Jazz,Oscar Tshiebwe,3,7,0.5950062850107576
+22400989,2025-03-17,2024-25,utah_jazz,Utah Jazz,Jordan Clarkson,3,8,0.2749045529103591
+22400627,2025-03-19,2024-25,utah_jazz,Utah Jazz,Collin Sexton,3,8,0.4407662519294746
+22401050,2025-03-25,2024-25,utah_jazz,Utah Jazz,Kyle Filipowski,3,4,0.3493086053449988
+22500120,2025-10-27,2025-26,utah_jazz,Utah Jazz,Walker Kessler,3,4,0.4312266321429338
+22500158,2025-11-03,2025-26,utah_jazz,Utah Jazz,Kyle Filipowski,3,6,0.4126368601098273
+22500282,2025-11-23,2025-26,utah_jazz,Utah Jazz,Jusuf Nurkić,4,4,0.1829425741974609
+22500291,2025-11-24,2025-26,utah_jazz,Utah Jazz,Kyle Filipowski,6,10,0.2633865519759085
+22500077,2025-11-28,2025-26,utah_jazz,Utah Jazz,Brice Sensabaugh,3,3,0.2898802788741049
+22500301,2025-11-30,2025-26,utah_jazz,Utah Jazz,Jusuf Nurkić,3,7,0.4058835961825709
+22501213,2025-12-12,2025-26,utah_jazz,Utah Jazz,Kevin Love,3,7,0.4697457089615475
+22500379,2025-12-18,2025-26,utah_jazz,Utah Jazz,Isaiah Collier,3,3,0.3600859111766709
+22500393,2025-12-20,2025-26,utah_jazz,Utah Jazz,Kevin Love,4,3,0.368256115538958
+22500430,2025-12-26,2025-26,utah_jazz,Utah Jazz,Jusuf Nurkić,4,4,0.2771374486098375
+22500525,2026-01-07,2025-26,utah_jazz,Utah Jazz,Jusuf Nurkić,3,3,0.382899630529982
+22500531,2026-01-08,2025-26,utah_jazz,Utah Jazz,Walter Clayton Jr.,4,7,0.2944832682199505
+22500558,2026-01-12,2025-26,utah_jazz,Utah Jazz,Jusuf Nurkić,3,3,0.4310266849371787
+22500678,2026-01-28,2025-26,utah_jazz,Utah Jazz,Kyle Filipowski,5,8,0.3496301446395217
+22500717,2026-02-03,2025-26,utah_jazz,Utah Jazz,Svi Mykhailiuk,4,7,0.4555941777782659
+22500735,2026-02-05,2025-26,utah_jazz,Utah Jazz,Kyle Filipowski,5,5,0.3812601173027425
+22500763,2026-02-09,2025-26,utah_jazz,Utah Jazz,Kyle Filipowski,3,6,0.3675486220019778
+22500856,2026-02-26,2025-26,utah_jazz,Utah Jazz,Svi Mykhailiuk,3,10,0.3854419208980755
+22500949,2026-03-11,2025-26,utah_jazz,Utah Jazz,Keyonte George,4,6,0.3204158329094544
+22501081,2026-03-28,2025-26,utah_jazz,Utah Jazz,Svi Mykhailiuk,3,10,0.4457910986231524
+22501181,2026-04-10,2025-26,utah_jazz,Utah Jazz,Oscar Tshiebwe,5,7,0.4998509233711695
+22400155,2024-11-04,2024-25,washington_wizards,Washington Wizards,Jonas Valančiūnas,3,7,0.5096194608687545
+22400224,2024-11-13,2024-25,washington_wizards,Washington Wizards,Jonas Valančiūnas,3,8,0.4600195447719743
+22400012,2024-11-15,2024-25,washington_wizards,Washington Wizards,Alex Sarr,3,4,0.4894112207413234
+22400028,2024-11-22,2024-25,washington_wizards,Washington Wizards,Malcolm Brogdon,3,5,0.3333977252780976
+22400400,2024-12-23,2024-25,washington_wizards,Washington Wizards,Jonas Valančiūnas,3,4,0.3549411019510731
+22400456,2025-01-01,2024-25,washington_wizards,Washington Wizards,Jonas Valančiūnas,3,7,0.3823917183383806
+22400983,2025-01-23,2024-25,washington_wizards,Washington Wizards,Jonas Valančiūnas,4,8,0.2311097617727118
+22400700,2025-02-03,2024-25,washington_wizards,Washington Wizards,Jonas Valančiūnas,5,4,0.3234823326912405
+22400860,2025-03-01,2024-25,washington_wizards,Washington Wizards,Corey Kispert,4,5,0.3307504259242471
+22401014,2025-03-21,2024-25,washington_wizards,Washington Wizards,Tristan Vukcevic,3,9,0.439413041149749
+22500259,2025-11-19,2025-26,washington_wizards,Washington Wizards,Cam Whitmore,3,7,0.1958407434372459
+22500050,2025-11-21,2025-26,washington_wizards,Washington Wizards,Cam Whitmore,3,9,0.2722214352584728
+22500425,2025-12-26,2025-26,washington_wizards,Washington Wizards,Bub Carrington,4,6,0.3406641123058979
+22500477,2026-01-02,2025-26,washington_wizards,Washington Wizards,Marvin Bagley III,4,9,0.4650575124860247
+22500577,2026-01-14,2025-26,washington_wizards,Washington Wizards,Marvin Bagley III,3,6,0.4067842250412221
+22500592,2026-01-16,2025-26,washington_wizards,Washington Wizards,Malaki Branham,5,9,0.346762960720382
+22500629,2026-01-22,2025-26,washington_wizards,Washington Wizards,Will Riley,4,6,0.1721966855794044
+22500707,2026-02-01,2025-26,washington_wizards,Washington Wizards,Marvin Bagley III,3,8,0.3719066896281969
+22500733,2026-02-05,2025-26,washington_wizards,Washington Wizards,Justin Champagnie,3,9,0.5477227321694543
+22500776,2026-02-11,2025-26,washington_wizards,Washington Wizards,Bilal Coulibaly,3,3,0.3555571161851182
+22501098,2026-03-30,2025-26,washington_wizards,Washington Wizards,Tristan Vukcevic,3,8,0.3235458294781793
+22501105,2026-04-01,2025-26,washington_wizards,Washington Wizards,Justin Champagnie,3,7,0.4942413969726918
+22501133,2026-04-05,2025-26,washington_wizards,Washington Wizards,Bub Carrington,5,6,0.3032840902445218
+22501187,2026-04-12,2025-26,washington_wizards,Washington Wizards,Julian Reese,4,7,0.3618142947224925
