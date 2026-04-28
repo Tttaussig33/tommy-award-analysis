@@ -1,0 +1,44 @@
+% Standalone PDF for the per-60 Tommy table fragment.
+% Compile: pdflatex results_per60_table_standalone.tex
+% Do not compile results_per60_table_body.tex directly.
+
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\title{Predicted Tommy wins per 60 minutes\\{\large Full ranking (300+ minutes)}}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent
+Rate $= 60 \times (\text{predicted wins}) / (\text{total minutes})$.
+Data from \texttt{predictions/*\_predicted\_tommy\_counts\_combined.csv} and
+\texttt{predictions/*\_player\_game\_enriched.csv}. Regenerate rows with
+\texttt{python3 build\_results\_per60\_table\_tex.py}.
+
+\vspace{1em}
+
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}r l l r r r@{}}
+    \toprule
+    \textbf{\#} & \textbf{Player} & \textbf{Team} & \textbf{Wins} & \textbf{Min} & \textbf{Per-60} \\
+    \endfirsthead
+    \multicolumn{6}{c}{\textit{Continued from previous page}} \\
+    \toprule
+    \textbf{\#} & \textbf{Player} & \textbf{Team} & \textbf{Wins} & \textbf{Min} & \textbf{Per-60} \\
+    \endhead
+    \midrule
+    \multicolumn{6}{r}{\textit{Continued on next page}} \\
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    \input{results_per60_table_body.tex}
+\end{longtable}
+
+\end{document}
