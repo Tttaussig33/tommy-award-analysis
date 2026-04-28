@@ -14,6 +14,7 @@
 \usepackage{siunitx}        % nice number alignment in tables
 \usepackage{xcolor}
 \usepackage{colortbl}       % row/cell colors
+\usepackage{longtable}     % multi-page tables
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -89,48 +90,48 @@ recipient for that game). \textbf{Net rtg.} is the on/off proxy
 \section{Model Results}
 % ==================================================================
 Table~\ref{tab:results} compares every classifier on the held-out
-2024--25 and 2025--26 seasons, sorted by Top-1 game accuracy from
-highest to lowest.
+2024--25 and 2025--26 seasons, sorted by Top-3 game accuracy from
+highest to lowest (ties at four decimals broken by lower log loss).
 
 \begin{table}[H]
     \centering
-    \caption{All model results on the 2024--25 and 2025--26 test seasons, ranked by Top-1 game accuracy.}
+    \caption{All model results on the 2024--25 and 2025--26 test seasons, ranked by Top-3 game accuracy.}
     \label{tab:results}
     \renewcommand{\arraystretch}{1.25}
     \rowcolors{2}{lightgray}{white}
     \begin{tabular}{l S S S S}
         \toprule
-        \textbf{Model} & {\textbf{Top-1 Acc.}} & {\textbf{F1}} & {\textbf{Recall}} & {\textbf{PR-AUC}} \\
+        \textbf{Model} & {\textbf{Top-3 Acc.}} & {\textbf{PR-AUC}} & {\textbf{Brier Score}} & {\textbf{Log loss}} \\
         \midrule
-        Random forest        & 0.4233 & 0.4233 & 0.4233 & 0.3630 \\
-        XGBoost              & 0.3988 & 0.3988 & 0.3988 & 0.3363 \\
-        Ridge logistic       & 0.3926 & 0.3926 & 0.3926 & 0.3168 \\
-        Elastic-net logistic & 0.3804 & 0.3804 & 0.3804 & 0.3168 \\
-        Lasso logistic       & 0.3497 & 0.3497 & 0.3497 & 0.3083 \\
-        Decision tree        & 0.3067 & 0.3067 & 0.3067 & 0.2559 \\
+        Random forest        & 0.7853 & 0.3630 & 0.0709 & 0.2339 \\
+        Elastic-net logistic & 0.7485 & 0.3143 & 0.1685 & 0.5024 \\
+        Lasso logistic       & 0.7423 & 0.3150 & 0.1695 & 0.5070 \\
+        XGBoost              & 0.7362 & 0.3363 & 0.1189 & 0.3514 \\
+        Ridge logistic       & 0.7362 & 0.3286 & 0.1774 & 0.5293 \\
+        Decision tree        & 0.6994 & 0.2383 & 0.0801 & 0.3945 \\
         \bottomrule
     \end{tabular}
 \end{table}
 
-Table~\ref{tab:results-top1} presents a condensed view with only the
-Top-1 game accuracy for each model.
+Table~\ref{tab:results-top3} presents a condensed view with Top-3 game
+accuracy for each model (same ranking as Table~\ref{tab:results}).
 
 \begin{table}[H]
     \centering
-    \caption{Model Top-1 game accuracy on the 2024--25 and 2025--26 test seasons.}
-    \label{tab:results-top1}
+    \caption{Model Top-3 game accuracy on the 2024--25 and 2025--26 test seasons.}
+    \label{tab:results-top3}
     \renewcommand{\arraystretch}{1.25}
     \rowcolors{2}{lightgray}{white}
     \begin{tabular}{l S}
         \toprule
-        \textbf{Model} & {\textbf{Top-1 Acc.}} \\
+        \textbf{Model} & {\textbf{Top-3 Acc.}} \\
         \midrule
-        Random forest        & 0.4233 \\
-        XGBoost              & 0.3988 \\
-        Ridge logistic       & 0.3926 \\
-        Elastic-net logistic & 0.3804 \\
-        Lasso logistic       & 0.3497 \\
-        Decision tree        & 0.3067 \\
+        Random forest        & 0.7853 \\
+        Elastic-net logistic & 0.7485 \\
+        Lasso logistic       & 0.7423 \\
+        XGBoost              & 0.7362 \\
+        Ridge logistic       & 0.7362 \\
+        Decision tree        & 0.6994 \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -275,10 +276,55 @@ Below are the baseline plots exported from the notebooks.
           numeric columns look clean; adjust \texttt{table-format}
           in the preamble if a column needs more/fewer digits.
     \item To add a new model's row, copy any existing row in
-          Table~\ref{tab:results} and replace the numbers.
+          Table~\ref{tab:results} and replace the numbers (keep rows sorted
+          by Top-3 accuracy, then lower log loss as a tie-break).
     \item To add a new figure, drop the image file into the same
           folder as this \texttt{.tex} file and copy a
           \verb|\begin{figure}...\end{figure}| block.
 \end{itemize}
+
+% ==================================================================
+\section{Predicted Tommy wins per 60 minutes (full ranking)}
+% ==================================================================
+Table~\ref{tab:per60-full} lists every player in the cross-team prediction
+export who logged at least \textbf{300} total minutes across
+\texttt{predictions/*\_player\_game\_enriched.csv} (2024--25 and 2025--26),
+merged with predicted win totals from
+\texttt{predictions/*\_predicted\_tommy\_counts\_combined.csv}.
+The rate is $60 \times (\text{predicted wins}) / (\text{total minutes})$.
+Rows are sorted by per-60 rate (highest first). To refresh the table body
+and the top-10 bar chart (Figure~\ref{fig:per60-top10}) after updating prediction CSVs, run
+\texttt{python3 build\_results\_per60\_table\_tex.py}. Unicode names in the
+fragment assume UTF-8 \texttt{pdflatex} or use \texttt{xelatex}/\texttt{lualatex}
+if compilation errors occur.
+
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}r l l r r r@{}}
+    \caption{Full league-wide ranking: predicted Tommy-style wins per 60 minutes (minimum 300 minutes).}
+    \label{tab:per60-full}\\
+    \toprule
+    \textbf{\#} & \textbf{Player} & \textbf{Team} & \textbf{Wins} & \textbf{Min} & \textbf{Per-60} \\
+    \endfirsthead
+    \multicolumn{6}{c}{\tablename\ \thetable{} --- \textit{continued from previous page}} \\
+    \toprule
+    \textbf{\#} & \textbf{Player} & \textbf{Team} & \textbf{Wins} & \textbf{Min} & \textbf{Per-60} \\
+    \endhead
+    \midrule
+    \multicolumn{6}{r}{\textit{Continued on next page}} \\
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    \input{results_per60_table_body.tex}
+\end{longtable}
+\endgroup
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.92\textwidth]{results_per60_top10.png}
+    \caption{Top ten players by predicted Tommy Award wins per 60 minutes (same data as the head of Table~\ref{tab:per60-full}); bar colors match franchise primaries from the build script.}
+    \label{fig:per60-top10}
+\end{figure}
 
 \end{document}
