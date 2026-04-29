@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  27 APR 2026 10:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  28 APR 2026 14:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -18,19 +18,21 @@ l.1         1
               & Giannis Antetokounmpo & Milwaukee Bucks & 78 & 3327.9 & 1.40...
 
 ? 
-./results_per60_table_body.tex:1: Emergency stop.
- ...                                              
-                                                  
-l.1         1
-              & Giannis Antetokounmpo & Milwaukee Bucks & 78 & 3327.9 & 1.40...
+Missing character: There is no 1 in font nullfont!
+./results_per60_table_body.tex:1: Misplaced alignment tab character &.
+l.1         1 &
+                Giannis Antetokounmpo & Milwaukee Bucks & 78 & 3327.9 & 1.40...
 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
+./results_per60_table_body.tex:1: Emergency stop.
+l.1 
+    
+End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 15 strings out of 473190
- 545 string characters out of 5715801
+ 14 strings out of 473190
+ 412 string characters out of 5715801
  391984 words of memory out of 5000000
  23367 multiletter control sequences out of 15000+600000
  558837 words of font info for 36 fonts, out of 8000000 for 9000

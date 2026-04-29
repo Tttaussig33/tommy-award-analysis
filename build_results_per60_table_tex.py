@@ -101,13 +101,20 @@ def main() -> None:
             .replace("#", "\\#")
         )
 
-    lines = [
+    # Fragment only — must be \input inside longtable, or set TeX root to the standalone.
+    table_lines = [
         f"        {i + 1} & {esc(r['player_name'])} & {esc(r['team'])} & "
         f"{r['predicted_wins']:.0f} & {r['total_minutes']:.1f} & {r['per_60']:.4f} \\\\"
         for i, r in m.iterrows()
     ]
-    OUT.write_text("\n".join(lines), encoding="utf-8")
-    print(f"Wrote {OUT} ({len(lines)} rows, min minutes={MIN_MINUTES})")
+    header = [
+        "% !TEX root = results_per60_table_standalone.tex",
+        "% This file is table *rows* only, not a full document. In TeXShop, Cmd-T builds the root above.",
+        "% On the command line: pdflatex results_per60_table_standalone.tex",
+        "",
+    ]
+    OUT.write_text("\n".join(header + table_lines), encoding="utf-8")
+    print(f"Wrote {OUT} ({len(table_lines)} rows, min minutes={MIN_MINUTES})")
 
     plot_top = m.head(TOP_N_PLOT).sort_values("per_60", ascending=True)
     bar_colors = [team_primary_hex(tm) for tm in plot_top["team"]]
