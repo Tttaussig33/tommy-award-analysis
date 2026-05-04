@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{table}[ht]
+    \centering
+    \renewcommand{\arraystretch}{1.12}
+    \setlength{\tabcolsep}{8pt}
+    \begin{tabularx}{0.82\textwidth}{>{\bfseries}l X}
+    \toprule
+    Abbreviation & Statistic \\
+    \midrule
+    MIN & Minutes Played \\
+    PTS & Points \\
+    AST & Assists \\
+    OREB & Offensive Rebounds \\
+    DREB & Defensive Rebounds \\
+    REB & Total Rebounds \\
+    STL & Steals \\
+    BLK & Blocks \\
+    TOV & Turnovers \\
+    PF & Personal Fouls \\
+    +/- & Plus/Minus \\
+    USG\% & Usage Rate \\
+    FGM & Field Goals Made \\
+    FGA & Field Goals Attempted \\
+    3PM & 3-Point Field Goals Made \\
+    3PA & 3-Point Field Goals Attempted \\
+    FTM & Free Throws Made \\
+    - & Deflections \\
+    - & Charges Drawn \\
+    \bottomrule
+    \end{tabularx}
+    \caption{NBA-provided statistics used in the model.}
+    \label{tab:nba_stats_clean}
+    \end{table}
+
+    \begin{table}[ht]
+        \centering
+        \renewcommand{\arraystretch}{1.2}
+        \setlength{\tabcolsep}{6pt}
+        \small
+        \begin{tabularx}{\textwidth}{>{\bfseries}l >{\raggedright\arraybackslash}X}
+        \toprule
+        Statistic & Formula / Description \\
+        \midrule
+        Points per Minute & - \\
+        Assists per Minute & - \\
+        Total Rebounds per Minute & - \\
+        Steals per Minute & - \\
+        Blocks per Minute & - \\
+        Stocks & $\text{steals} + \text{blocks}$ \\
+        Stocks per Minute & - \\
+        Hustle Proxy & $\dfrac{\text{offensive rebounds} + \text{steals} + \text{blocks}}{\text{minutes}}$ \\
+        \bottomrule
+        \end{tabularx}
+        \caption{Feature-engineered statistics used in the model.}
+        \label{tab:engineered_stats_clean}
+        \end{table}
+
+    \begin{table}[ht]
+        \centering
+        \renewcommand{\arraystretch}{1.2}
+        \setlength{\tabcolsep}{6pt}
+        \small
+        \begin{tabularx}{\textwidth}{>{\bfseries}l >{\raggedright\arraybackslash}X}
+        \toprule
+        Statistic & Formula / Description \\
+        \midrule
+        Points Rank & Player's rank in points within a game \\
+        Offensive Rebounds Rank & Player's rank in offensive rebounds within a game \\
+        Total Rebounds Rank & Player's rank in total rebounds within a game \\
+        Assists Rank & Player's rank in assists within a game \\
+        Steals Rank & Player's rank in steals within a game \\
+        Blocks Rank & Player's rank in blocks within a game \\
+        Plus/Minus Rank & Player's rank in plus/minus within a game \\
+        Minutes Rank & Player's rank in minutes played within a game \\
+        Stocks Rank & Player's rank in stocks within a game \\
+        Hustle Proxy Rank & Player's rank in hustle proxy within a game \\
+        \bottomrule
+        \end{tabularx}
+        \caption{Within-game rank statistics used in the model.}
+        \label{tab:rank_stats_clean}
+        \end{table}
+
+\end{document}
