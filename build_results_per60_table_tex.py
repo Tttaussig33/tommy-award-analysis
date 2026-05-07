@@ -9,6 +9,7 @@ import pandas as pd
 
 PRED_DIR = Path(__file__).resolve().parent / "predictions"
 OUT = Path(__file__).resolve().parent / "results_per60_table_body.tex"
+OUT_TOP100 = Path(__file__).resolve().parent / "results_per60_table_body_top100.tex"
 TOP_N_PLOT = 10
 OUT_PLOT = Path(__file__).resolve().parent / "results_per60_top10.png"
 ENRICHED_RE = re.compile(r"^(.+)_(20\d{2}-\d{2})_player_game_enriched\.csv$")
@@ -115,6 +116,10 @@ def main() -> None:
     ]
     OUT.write_text("\n".join(header + table_lines), encoding="utf-8")
     print(f"Wrote {OUT} ({len(table_lines)} rows, min minutes={MIN_MINUTES})")
+
+    top100_lines = table_lines[:100]
+    OUT_TOP100.write_text("\n".join(header + top100_lines), encoding="utf-8")
+    print(f"Wrote {OUT_TOP100} ({len(top100_lines)} rows)")
 
     plot_top = m.head(TOP_N_PLOT).sort_values("per_60", ascending=True)
     bar_colors = [team_primary_hex(tm) for tm in plot_top["team"]]
