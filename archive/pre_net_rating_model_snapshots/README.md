@@ -6,6 +6,7 @@ These files are a **frozen copy** of your modeling notebooks and common result a
 
 | Path | Contents |
 |------|----------|
+| `data/Tommy_Award_Player_Game_Table_hustle.csv` | Hustle player–game table **exactly as at commit `27ae5b0`** (before the net-rating / per-minute `hustle_proxy` CSV refresh). Use this if you re-run archived notebooks from `main` and point `INPUT_PATH` / `csv_path` here. |
 | `notebooks/` | Jupyter notebooks with **saved outputs** from that era: ridge/lasso/elastic-net, decision tree, random forest, XGBoost, league prediction notebook, slides export helper. |
 | `figures/` | Baseline metric plots, RF/XGB metric PNGs, `feature_importance.png`, `results_per60_top10.png`, position pie chart. |
 | `tables/results_per60_table_body.tex` | Full per-60 ranking fragment as of that commit. |
@@ -13,7 +14,10 @@ These files are a **frozen copy** of your modeling notebooks and common result a
 ## How to use
 
 - **View old results:** open the `.ipynb` files in `notebooks/`; outputs are already stored in the file.
-- **Re-run those notebooks:** they still point at the **old paths** (e.g. `Tommy_Award_Player_Game_Table_hustle.csv` in the **repository root**). To execute them today you would either check out commit `27ae5b0` in a separate worktree or copy the matching hustle CSV from that commit next to the notebook and adjust paths manually.
+- **Re-run on `main` without a worktree:** point the first data-loading cell at  
+  `archive/pre_net_rating_model_snapshots/data/Tommy_Award_Player_Game_Table_hustle.csv`  
+  (or copy that file to the repo root if you prefer not to edit paths).
+- **Re-run in the original layout:** use a **git worktree** on `27ae5b0` (see root `README.md` for the exact command). Paths and notebooks match that commit; hustle CSV is at the **worktree root** as `Tommy_Award_Player_Game_Table_hustle.csv`.
 
 ## Current project
 

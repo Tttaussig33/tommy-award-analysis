@@ -14,7 +14,19 @@ This repository contains player–game data, notebooks that train classifiers an
 | `paper/` | `tommy_award_research_paper.tex`, `\input{...}` fragments, PDFs, and related TeX sources. |
 | `results/figures/` | Plots saved by scripts or notebooks (metrics, baselines, per-60 bar chart, position pie chart). |
 | `archive/old_model_attempts/` | Older experiments (pregame features, baseline comparisons). Paths there may still assume CSVs in the project root—use `data/` or adjust paths if you revive them. |
-| `archive/pre_net_rating_model_snapshots/` | **Frozen** notebooks + figures + per-60 TeX from commit `27ae5b0` (before the hustle CSV / net-rating refresh). Saved cell outputs match the older data; see `README.md` inside that folder. |
+| `archive/pre_net_rating_model_snapshots/` | **Frozen** notebooks, figures, per-60 TeX, and **`data/Tommy_Award_Player_Game_Table_hustle.csv`** from commit `27ae5b0` (before net-rating / hustle-proxy refresh). See `README.md` in that folder. |
+
+## Paper-era worktree (optional)
+
+To open the **full project exactly as at `27ae5b0`** (notebooks and hustle CSV at the old paths, no `data/` subfolder):
+
+```bash
+cd "/path/to/Celtics_Project"
+git worktree add ../Celtics_Project_paper_era 27ae5b0
+```
+
+Use any sibling directory name you prefer; start Jupyter from that folder’s root so paths match the old notebooks.  
+**Remove when done:** `git worktree remove ../Celtics_Project_paper_era`
 
 Run **commands from the repository root** unless noted otherwise. Jupyter kernels work whether the server is started in the root or in `notebooks/`; notebook cells resolve `REPO_ROOT` automatically.
 
