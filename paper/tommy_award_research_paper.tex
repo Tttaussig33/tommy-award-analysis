@@ -86,19 +86,15 @@ Once we had the Tommy Award data, retrieving per-game player stats from the NBA 
 For each Tommy Award winner, I created player-level rows containing each player's stats for that game, using stats from the NBA API. This included the winner of the Tommy Award, as well as the other players in the game. Then, to use the Tommy Award data, I had to ensure that winners were marked as 1 in the CSV and losers as 0. I removed blank winners, winners that were not actual players (once a commentator won it, and multiple times, the ``stay ready'' group won it). Also, many of the winners were announced after midnight because the game was on the West Coast or had gone to overtime. We had to manually fix the dates for those games so the NBA API could correctly identify the games and add the desired stats to each player row. Fortunately, the Tommy Award data I received included the opponent for each game, so if the date was off, I could match the winner to the opponent with the official schedule to confirm the correct winner on the correct date.
 
 \subsection{Engineered Features}
-On top of the statistics the NBA provides, we wanted to create our own features to better value the team's unsung players. We did this by making features that prioritized high net rating and low usage. Net rating measures how much better or worse a team performs per 100 possessions while a player is on the floor. A positive net rating suggests that the team is outscoring opponents during that player's minutes. When predicting the Tommy Award, we want to reward players with consistently high net ratings. Especially if that player consistently takes fewer shots and has fewer touches (we call this usage), that is a sign they are contributing positively without using a large share of offensive possessions. Those players are doing the ``little things'' we mentioned earlier and that our data shows (deflections, charges drawn), which are helping their team win beyond just scoring points.
-
-By combining net rating and usage rate, I engineered a feature called impact efficiency. The equation for impact efficiency is
+On top of the statistics the NBA provides, we wanted to create our own features to better value the team's unsung players. We did this by making features that prioritized high net rating and low usage. Net rating measures how much better or worse a team performs per 100 possessions while a player is on the floor. A positive net rating suggests that the team is outscoring opponents during that player's minutes. When predicting the Tommy Award, we want to reward players with consistently high net ratings. Especially if that player consistently takes fewer shots and has fewer touches (we call this usage), that is a sign they are contributing positively without using a large share of offensive possessions. Those players are doing the ``little things'' we mentioned earlier and that our data shows (deflections, charges drawn), which are helping their team win beyond just scoring points. By combining net rating and usage rate, I engineered a feature called impact efficiency. The equation for impact efficiency is
 \[
   net\_rating / usage\_rate,
 \]
-and it rewards players who have a high net rating and a low usage rate. Remember, usage rate is the percentage of the team's plays that are ended by a particular player. A player with a low usage rate might sit in the corner or shoot 3s, or a big man who sets a lot of screens; either way, they are not their team's primary offensive option. Despite this, if their net rating is still high (their team goes up when they are on the floor), it means they are doing other things that aren't shooting/scoring to help their team win.
-
-This could be grabbing rebounds, getting steals, things that aren't scoring, but are still positively impacting their team. This player archetype is what we are seeking with the Tommy Award.
+and it rewards players who have a high net rating and a low usage rate. Remember, usage rate is the percentage of the team's plays that are ended by a particular player. A player with a low usage rate might sit in the corner or shoot 3s, or a big man who sets a lot of screens; either way, they are not their team's primary offensive option. Despite this, if their net rating is still high (their team goes up when they are on the floor), it means they are doing other things that aren't shooting/scoring to help their team win. This could be grabbing rebounds, getting steals, things that aren't scoring, but are still positively impacting their team. This player archetype is what we are seeking with the Tommy Award.
 
 The second feature engineered statistic is role outperformance. Similar to impact efficiency, it involves both net rating and usage rate in the equation:
 \[
-  net\ rating * (1 - usage\_rate).
+  net\_rating * (1 - usage\_rate).
 \]
 Contrasting impact efficiency, this feature still rewards players with strong on-court impact but reduces the extreme effects that can occur when dividing by very small usage rates.
 
@@ -115,8 +111,8 @@ I also included rank stats, which sort teammates for the traditional statistical
     \midrule
     \texttt{impact\_efficiency} & Net rating divided by usage rate (with numerical stabilization in code). \\
     \texttt{role\_outperformance} & Net rating $\times (1 - \texttt{usage\_rate})$. \\
-    \texttt{stocks} & Steals plus blocks. \\
-    \texttt{hustle\_proxy} & Composite hustle signal built from tracked hustle inputs. \\
+    \texttt{stocks} & Steals + blocks. \\
+    \texttt{hustle\_proxy} & (Offensive rebounds + steals + blocks) / minutes played \\
     Per-minute rates & \texttt{points\_per\_min}, \texttt{oreb\_per\_min}, \texttt{reb\_per\_min}, \texttt{ast\_per\_min}, \texttt{stocks\_per\_min}. \\
     Rank stats & Within-game teammate ranks such as \texttt{points\_rank}, \texttt{reboundsOffensive\_rank}, \texttt{reboundsTotal\_rank}, \texttt{assists\_rank}, \texttt{steals\_rank}, \texttt{blocks\_rank}, \texttt{plusMinusPoints\_rank}, \texttt{minutes\_decimal\_rank}, \texttt{stocks\_rank}, \texttt{hustle\_proxy\_rank}. \\
     \bottomrule
@@ -195,27 +191,36 @@ After achieving 78\% top-3 and 42\% top-1 accuracy with Random Forest, I applied
 }
 
 \subsection{Feature Importance}
-Table~\ref{tab:fi} lists all feature importances for the fitted random forest, in the same order as \texttt{display(feature\_importance\_df)} in \texttt{notebooks/random\_forest\_classifier.ipynb} (sorted descending). Values are regenerated by \texttt{python3 scripts/export\_rf\_feature\_importances\_tex.py}.
+Table~\ref{tab:fi} lists the top fifteen random forest feature importances; values match the bar chart in the analysis notebook (three decimal places as displayed there). The full ranking of all thirty-nine numeric features is in \texttt{results\_rf\_feature\_importance\_body.tex}, regenerated by \texttt{python3 scripts/export\_rf\_feature\_importances\_tex.py}.
 
 {\footnotesize
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.1}
-\begin{longtable}{@{}r l r@{}}
-  \caption{Random Forest: all feature importances (39 numeric features).}\label{tab:fi}\\
-  \toprule
-  \textbf{Rank} & \textbf{Feature} & \textbf{Importance} \\
-  \endfirsthead
-  \multicolumn{3}{c}{\textit{Table \ref{tab:fi} continued}}\\
-  \toprule
-  \textbf{Rank} & \textbf{Feature} & \textbf{Importance} \\
-  \endhead
-  \midrule
-  \multicolumn{3}{r}{\textit{Continued on next page}}\\
-  \endfoot
-  \bottomrule
-  \endlastfoot
-  \input{results_rf_feature_importance_body.tex}
-\end{longtable}
+\begin{table}[htbp]
+  \centering
+  \caption{Random Forest: top fifteen feature importances.}\label{tab:fi}
+  \begin{tabular}{@{}r l r@{}}
+    \toprule
+    \textbf{Rank} & \textbf{Feature} & \textbf{Importance} \\
+    \midrule
+    1 & \texttt{points\_per\_min} & 0.088 \\
+    2 & \texttt{points} & 0.075 \\
+    3 & \texttt{fieldGoalsMade} & 0.069 \\
+    4 & \texttt{points\_rank} & 0.060 \\
+    5 & \texttt{usage\_rate} & 0.045 \\
+    6 & \texttt{fieldGoalsAttempted} & 0.043 \\
+    7 & \texttt{minutes\_decimal} & 0.039 \\
+    8 & \texttt{reb\_per\_min} & 0.034 \\
+    9 & \texttt{threePointersMade} & 0.033 \\
+    10 & \texttt{impact\_efficiency} & 0.032 \\
+    11 & \texttt{ast\_per\_min} & 0.031 \\
+    12 & \texttt{role\_outperformance} & 0.029 \\
+    13 & \texttt{plusMinusPoints\_rank} & 0.027 \\
+    14 & \texttt{hustle\_proxy} & 0.027 \\
+    15 & \texttt{stocks\_per\_min} & 0.026 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 }
 
 \section{Discussion}

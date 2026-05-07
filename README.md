@@ -66,7 +66,7 @@ Run **commands from the repository root** unless noted otherwise. Jupyter kernel
    pdflatex -interaction=nonstopmode tommy_award_research_paper.tex
    ```
 
-   The main file `\input`s `results_per60_table_body_top100.tex` and `results_rf_feature_importance_body.tex` from the **same** `paper/` directory.
+   The main file `\input`s `results_per60_table_body_top100.tex`. Feature-importance **Table 5.4** uses the top-fifteen values inlined in `tommy_award_research_paper.tex` (aligned with the notebook bar chart); `results_rf_feature_importance_body.tex` holds the **full** 39-feature ranking from `export_rf_feature_importances_tex.py`.
 
 ## Rebuilding data from the NBA API
 
