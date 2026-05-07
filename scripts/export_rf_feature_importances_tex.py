@@ -141,12 +141,21 @@ def main() -> None:
         .reset_index(drop=True)
     )
 
+    def tex_escape_feature(name: str) -> str:
+        return str(name).replace("_", r"\_").replace("%", r"\%").replace("&", r"\&")
+
+    header = [
+        "% !TEX root = tommy_award_research_paper.tex",
+        "% Table body rows only (\\input inside longtable in the paper). Do not compile this file alone.",
+        "% Regenerate: python3 scripts/export_rf_feature_importances_tex.py",
+        "",
+    ]
     lines = []
     for i, row in fi.iterrows():
-        tex_name = row["feature"].replace("_", r"\_")
-        lines.append(f"    {i + 1} & \\texttt{{{tex_name}}} & {row['importance']:.6f} \\\\")
+        tex_name = tex_escape_feature(row["feature"])
+        lines.append(f"{i + 1} & \\texttt{{{tex_name}}} & {row['importance']:.6f} \\\\")
 
-    OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    OUT.write_text("\n".join(header + lines) + "\n", encoding="utf-8")
     print(f"Wrote {len(lines)} rows to {OUT}")
 
 

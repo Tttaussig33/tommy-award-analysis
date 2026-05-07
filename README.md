@@ -51,7 +51,7 @@ Run **commands from the repository root** unless noted otherwise. Jupyter kernel
    pdflatex -interaction=nonstopmode tommy_award_research_paper.tex
    ```
 
-   The main file `\input`s `results_per60_table_body_top100.tex` and `results_rf_feature_importance_body.tex` from the **same** `paper/` directory. The RF figure is `paper/feature_importance.png`.
+   The main file `\input`s `results_per60_table_body_top100.tex` and `results_rf_feature_importance_body.tex` from the **same** `paper/` directory.
 
 ## Rebuilding data from the NBA API
 
