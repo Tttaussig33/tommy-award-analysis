@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: Celtics Tommy Award — modeling and paper
+message: >-
+  If you use this repository or the research paper, please cite using the
+  metadata below. After you push to GitHub, add your repository URL to this file
+  under identifiers or preferred-citation.url so links resolve; GitHub will
+  still offer “Cite this repository” from the author and title fields.
+type: software
+authors:
+  - family-names: Taussig
+    given-names: Teddy
+abstract: >-
+  Machine learning models to predict Boston Celtics Tommy Award winners from
+  game-level statistics, extended to league-wide player profiles using NBA data.
+keywords:
+  - Tommy Award
+  - Boston Celtics
+  - NBA
+  - machine learning
+  - random forest
+date-released: '2026-05-06'
+preferred-citation:
+  type: generic
+  title: >-
+    Predicting Tommy Award Winners with Machine Learning: From Boston Celtics
+    Game Logs to League-Wide Player Profiles
+  authors:
+    - family-names: Taussig
+      given-names: Teddy
+  year: 2026

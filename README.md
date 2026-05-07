@@ -2,6 +2,15 @@
 
 This repository contains player–game data, notebooks that train classifiers and logistic models on Boston Celtics Tommy Award games, scripts that score other NBA teams, LaTeX for the research paper, and cached prediction outputs.
 
+## Research paper
+
+The finished write-up lives in **`paper/`**:
+
+- **PDF (read this):** [`paper/tommy_award_research_paper.pdf`](paper/tommy_award_research_paper.pdf) — *Predicting Tommy Award Winners with Machine Learning: From Boston Celtics Game Logs to League-Wide Player Profiles*
+- **Source:** [`paper/tommy_award_research_paper.tex`](paper/tommy_award_research_paper.tex) — compile with `pdflatex` from `paper/` (see [Quick start](#quick-start-reproduce-analysis-without-api-calls) below and [`paper/README.md`](paper/README.md)).
+
+If the repo is on GitHub, the root **`CITATION.cff`** powers the **“Cite this repository”** button on the repo home page. Pinning this repository on your GitHub profile also helps visitors find it quickly.
+
 ## Repository layout
 
 | Path | Purpose |
@@ -11,7 +20,7 @@ This repository contains player–game data, notebooks that train classifiers an
 | `csv_builders/` | Python modules and CLIs to **rebuild** the player–game table from `nba_api` and to enrich it (hustle, usage, net rating). |
 | `scripts/` | One-off analysis and LaTeX table generators (per-60 rankings, RF feature importances, Tommy leader/surprise summaries, figures). |
 | `predictions/` | Cached enriched per-team CSVs and combined predicted-win tallies (from the league notebook). |
-| `paper/` | `tommy_award_research_paper.tex`, `\input{...}` fragments, PDFs, and related TeX sources. |
+| `paper/` | **Research paper:** main `.tex`, committed PDF, generated table fragments; see [`paper/README.md`](paper/README.md). |
 | `results/figures/` | Plots saved by scripts or notebooks (metrics, baselines, per-60 bar chart, position pie chart). |
 | `archive/old_model_attempts/` | Older experiments (pregame features, baseline comparisons). Paths there may still assume CSVs in the project root—use `data/` or adjust paths if you revive them. |
 | `archive/pre_net_rating_model_snapshots/` | **Frozen** notebooks, figures, per-60 TeX, and **`data/Tommy_Award_Player_Game_Table_hustle.csv`** from commit `27ae5b0` (before net-rating / hustle-proxy refresh). See `README.md` in that folder. |
@@ -66,7 +75,7 @@ Run **commands from the repository root** unless noted otherwise. Jupyter kernel
    pdflatex -interaction=nonstopmode tommy_award_research_paper.tex
    ```
 
-   The main file `\input`s `results_per60_table_body_top100.tex`. Feature-importance **Table 5.4** uses the top-fifteen values inlined in `tommy_award_research_paper.tex` (aligned with the notebook bar chart); `results_rf_feature_importance_body.tex` holds the **full** 39-feature ranking from `export_rf_feature_importances_tex.py`.
+   The main file `\input`s `results_per60_table_body_top100.tex`. The Random Forest **feature-importance** table in the paper uses the top fifteen values **inlined** in `tommy_award_research_paper.tex` (aligned with the notebook bar chart); `results_rf_feature_importance_body.tex` holds the **full** 39-feature ranking from `export_rf_feature_importances_tex.py`.
 
 ## Rebuilding data from the NBA API
 
