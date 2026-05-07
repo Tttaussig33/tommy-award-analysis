@@ -2,7 +2,7 @@
 
 Position comes from the mode of `position` in Tommy_Award_Player_Game_Table_hustle.csv
 (matched by player name, ASCII-folded diacritics, then a few manual name→role fallbacks).
-Writes: tommy_winners_position_pie.png
+Writes: results/figures/tommy_winners_position_pie.png
 """
 from __future__ import annotations
 
@@ -14,10 +14,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent
-OUT = ROOT / "tommy_winners_position_pie.png"
-WINNERS_CSV = ROOT / "Tommy_Award_Winners.csv"
-HUSTLE_CSV = ROOT / "Tommy_Award_Player_Game_Table_hustle.csv"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+OUT = REPO_ROOT / "results" / "figures" / "tommy_winners_position_pie.png"
+WINNERS_CSV = REPO_ROOT / "data" / "Tommy_Award_Winners.csv"
+HUSTLE_CSV = REPO_ROOT / "data" / "Tommy_Award_Player_Game_Table_hustle.csv"
 
 # Spelling/legacy names in Tommy_Award_Winners.csv not found under the same string in hustle
 MANUAL: dict[str, str] = {

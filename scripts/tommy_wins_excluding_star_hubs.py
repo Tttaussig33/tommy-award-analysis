@@ -6,8 +6,8 @@ Uses the same artifacts as predict_tommy_award_other_teams.ipynb:
   predictions/*_predicted_tommy_counts_combined.csv
   predictions/*_player_game_enriched.csv
 
-Run from repo root:
-  python tommy_wins_excluding_star_hubs.py
+Run from repository root:
+  python3 scripts/tommy_wins_excluding_star_hubs.py
 """
 
 from __future__ import annotations
@@ -17,7 +17,8 @@ from pathlib import Path
 
 import pandas as pd
 
-PRED_DIR = Path(__file__).resolve().parent / "predictions"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+PRED_DIR = REPO_ROOT / "predictions"
 
 _ENRICHED_RE = re.compile(r"^(.+)_(20\d{2}-\d{2})_player_game_enriched\.csv$")
 

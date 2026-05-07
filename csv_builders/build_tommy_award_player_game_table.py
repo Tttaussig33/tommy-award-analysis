@@ -607,12 +607,13 @@ def build_dataset_from_winners_csv(
 
 
 if __name__ == "__main__":
+    _data = Path(__file__).resolve().parent.parent / "data"
     dataset, failed_games, remaining_games = build_dataset_from_winners_csv(
-        "Tommy_Award_Winners.csv",
-        output_path="Tommy_Award_Player_Game_Table.csv",
-        failed_output_path="Tommy_Award_Failed_Games.csv",
-        remaining_output_path="Tommy_Award_Remaining_Games.csv",
-        queue_csv_path="Tommy_Award_Remaining_Games.csv",
+        str(_data / "Tommy_Award_Winners.csv"),
+        output_path=str(_data / "Tommy_Award_Player_Game_Table.csv"),
+        failed_output_path=str(_data / "Tommy_Award_Failed_Games.csv"),
+        remaining_output_path=str(_data / "Tommy_Award_Remaining_Games.csv"),
+        queue_csv_path=str(_data / "Tommy_Award_Remaining_Games.csv"),
         stop_on_first_failure=True,
     )
     print(f"Built dataset with {len(dataset)} rows.")

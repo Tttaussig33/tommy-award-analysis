@@ -7,11 +7,12 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 
-PRED_DIR = Path(__file__).resolve().parent / "predictions"
-OUT = Path(__file__).resolve().parent / "results_per60_table_body.tex"
-OUT_TOP100 = Path(__file__).resolve().parent / "results_per60_table_body_top100.tex"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+PRED_DIR = REPO_ROOT / "predictions"
+OUT = REPO_ROOT / "paper" / "results_per60_table_body.tex"
+OUT_TOP100 = REPO_ROOT / "paper" / "results_per60_table_body_top100.tex"
 TOP_N_PLOT = 10
-OUT_PLOT = Path(__file__).resolve().parent / "results_per60_top10.png"
+OUT_PLOT = REPO_ROOT / "results" / "figures" / "results_per60_top10.png"
 ENRICHED_RE = re.compile(r"^(.+)_(20\d{2}-\d{2})_player_game_enriched\.csv$")
 MIN_MINUTES = 300.0
 

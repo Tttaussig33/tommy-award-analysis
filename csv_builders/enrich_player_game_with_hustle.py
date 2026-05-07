@@ -74,8 +74,9 @@ def fetch_hustle_for_game(game_id: str) -> pd.DataFrame:
 
 def fetch_advanced_for_game(game_id: str) -> pd.DataFrame:
     """
-    Return columns: GAME_ID, personId, usage_rate.
+    Return columns: GAME_ID, personId, usage_rate, net_rating.
     usage_rate is normalized to 0-1.
+    net_rating is NBA.com advanced box score on-court net (per 100 possessions), from netRating.
     """
     for attempt in range(1, MAX_RETRIES + 1):
         try:
@@ -90,15 +91,25 @@ def fetch_advanced_for_game(game_id: str) -> pd.DataFrame:
 
             id_col = find_col(player_df, ["personId", "PLAYER_ID", "playerId", "player_id"])
             usage_col = find_col(player_df, ["usagePercentage", "USG_PCT", "usage_rate"])
+            net_col = find_col(
+                player_df,
+                ["netRating", "NET_RATING", "NET_RTG"],
+            )
             if id_col is None or usage_col is None:
                 continue
 
             usage_rate = pd.to_numeric(player_df[usage_col], errors="coerce") / 100.0
+            net_rating = (
+                pd.to_numeric(player_df[net_col], errors="coerce")
+                if net_col
+                else pd.Series(pd.NA, index=player_df.index, dtype="float64")
+            )
             out = pd.DataFrame(
                 {
                     "GAME_ID": str(game_id),
                     "personId": player_df[id_col].astype(str),
                     "usage_rate": usage_rate,
+                    "net_rating": net_rating,
                 }
             )
             return out
@@ -107,7 +118,7 @@ def fetch_advanced_for_game(game_id: str) -> pd.DataFrame:
                 print(f"Skipping game {game_id} on advanced: unavailable/timeout")
             continue
 
-    return pd.DataFrame(columns=["GAME_ID", "personId", "usage_rate"])
+    return pd.DataFrame(columns=["GAME_ID", "personId", "usage_rate", "net_rating"])
 
 
 def main() -> None:
@@ -116,12 +127,12 @@ def main() -> None:
     )
     parser.add_argument(
         "--input",
-        default="Tommy_Award_Player_Game_Table.csv",
+        default="data/Tommy_Award_Player_Game_Table.csv",
         help="Input player-game table CSV.",
     )
     parser.add_argument(
         "--output",
-        default="Tommy_Award_Player_Game_Table_hustle.csv",
+        default="data/Tommy_Award_Player_Game_Table_hustle.csv",
         help="Output CSV with hustle columns appended.",
     )
     args = parser.parse_args()
@@ -139,7 +150,7 @@ def main() -> None:
     df["PERSON_ID_KEY"] = df[player_col].astype(str)
 
     # Allow safe re-runs on an already enriched file.
-    for col in ["deflections", "charges_drawn", "usage_rate"]:
+    for col in ["deflections", "charges_drawn", "usage_rate", "net_rating"]:
         if col in df.columns:
             df = df.drop(columns=[col])
 
@@ -175,6 +186,7 @@ def main() -> None:
     merged["deflections"] = pd.to_numeric(merged["deflections"], errors="coerce")
     merged["charges_drawn"] = pd.to_numeric(merged["charges_drawn"], errors="coerce")
     merged["usage_rate"] = pd.to_numeric(merged["usage_rate"], errors="coerce")
+    merged["net_rating"] = pd.to_numeric(merged["net_rating"], errors="coerce")
     merged.to_csv(args.output, index=False)
 
     print("\nDone.")
@@ -183,6 +195,7 @@ def main() -> None:
     print(f"Rows with deflections: {int(merged['deflections'].notna().sum())}")
     print(f"Rows with charges_drawn: {int(merged['charges_drawn'].notna().sum())}")
     print(f"Rows with usage_rate: {int(merged['usage_rate'].notna().sum())}")
+    print(f"Rows with net_rating (NBA advanced): {int(merged['net_rating'].notna().sum())}")
 
 
 if __name__ == "__main__":

@@ -7,3 +7,11 @@ __pycache__/
 venv/
 .python_packages/
 .idea/
+
+# LaTeX auxiliary (under paper/)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz

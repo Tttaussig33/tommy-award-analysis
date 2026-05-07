@@ -6,8 +6,8 @@ predict_tommy_award_other_teams.ipynb.
 Outputs:
   predictions/tommy_winners_hustle_leaderboard.csv — all players with wins + hustle sums + per-36 rates
 
-Run from repo root:
-  python tommy_leaders_hustle_stats.py
+Run from repository root:
+  python3 scripts/tommy_leaders_hustle_stats.py
 
 “Hustle-heavy” leader lines in stdout pick players who are elite in total hustle
 events (or per-36) and report who has the most predicted Tommy wins in that set.
@@ -20,7 +20,8 @@ from pathlib import Path
 
 import pandas as pd
 
-PRED_DIR = Path(__file__).resolve().parent / "predictions"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+PRED_DIR = REPO_ROOT / "predictions"
 OUT_CSV = PRED_DIR / "tommy_winners_hustle_leaderboard.csv"
 
 _ENRICHED_RE = re.compile(r"^(.+)_(20\d{2}-\d{2})_player_game_enriched\.csv$")

@@ -4,8 +4,8 @@ from pregame_features import build_pregame_feature_csv
 
 
 def main() -> None:
-    input_path = Path("Tommy_Award_Player_Game_Table.csv")
-    output_path = Path("Tommy_Award_Pregame_Features.csv")
+    input_path = Path("data/Tommy_Award_Player_Game_Table.csv")
+    output_path = Path("data/Tommy_Award_Pregame_Features.csv")
 
     feature_df = build_pregame_feature_csv(input_path=input_path, output_path=output_path)
 

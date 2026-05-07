@@ -12,8 +12,8 @@ Outputs:
   predictions/tommy_surprise_winner_counts.csv
   predictions/tommy_surprise_games_detail.csv
 
-Run from repo root:
-  python tommy_surprise_game_winners.py
+Run from repository root:
+  python3 scripts/tommy_surprise_game_winners.py
 """
 
 from __future__ import annotations
@@ -23,7 +23,8 @@ from pathlib import Path
 
 import pandas as pd
 
-PRED_DIR = Path(__file__).resolve().parent / "predictions"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+PRED_DIR = REPO_ROOT / "predictions"
 OUT_COUNTS = PRED_DIR / "tommy_surprise_winner_counts.csv"
 OUT_DETAIL = PRED_DIR / "tommy_surprise_games_detail.csv"
 
