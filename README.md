@@ -14,6 +14,7 @@ This repository contains player–game data, notebooks that train classifiers an
 | `paper/` | `tommy_award_research_paper.tex`, `\input{...}` fragments, PDFs, and related TeX sources. |
 | `results/figures/` | Plots saved by scripts or notebooks (metrics, baselines, per-60 bar chart, position pie chart). |
 | `archive/old_model_attempts/` | Older experiments (pregame features, baseline comparisons). Paths there may still assume CSVs in the project root—use `data/` or adjust paths if you revive them. |
+| `archive/pre_net_rating_model_snapshots/` | **Frozen** notebooks + figures + per-60 TeX from commit `27ae5b0` (before the hustle CSV / net-rating refresh). Saved cell outputs match the older data; see `README.md` inside that folder. |
 
 Run **commands from the repository root** unless noted otherwise. Jupyter kernels work whether the server is started in the root or in `notebooks/`; notebook cells resolve `REPO_ROOT` automatically.
 
