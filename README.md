@@ -23,9 +23,11 @@ To open the **full project exactly as at `27ae5b0`** (notebooks and hustle CSV a
 ```bash
 cd "/path/to/Celtics_Project"
 git worktree add ../Celtics_Project_paper_era 27ae5b0
+cd ../Celtics_Project_paper_era
+git switch -c paper-era-27ae5b0
 ```
 
-Use any sibling directory name you prefer; start Jupyter from that folder’s root so paths match the old notebooks.  
+The extra `git switch` puts the worktree on a **named branch** (same commit as `27ae5b0`). That avoids **detached HEAD**, which some editors mis-report as thousands of staged deletions when the window is multi-root. Use any sibling directory name you prefer; start Jupyter from that folder’s root so paths match the old notebooks.  
 **Remove when done:** `git worktree remove ../Celtics_Project_paper_era`
 
 Run **commands from the repository root** unless noted otherwise. Jupyter kernels work whether the server is started in the root or in `notebooks/`; notebook cells resolve `REPO_ROOT` automatically.
