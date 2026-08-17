@@ -1,127 +1,74 @@
-# Celtics Tommy Award — modeling and paper
+# Modeling Hustle and Impact in the NBA
 
-This repository contains player–game data, notebooks that train classifiers and logistic models on Boston Celtics Tommy Award games, scripts that score other NBA teams, LaTeX for the research paper, and cached prediction outputs.
+This project uses machine learning to study the **Tommy Award**, a Boston Celtics postgame award that recognizes players for hustle, toughness, and contributions that may not always stand out in a traditional box score.
 
-## Research paper
+The goal was to take an award that is largely based on watching and understanding the game, determine which statistics were associated with winning it, and then apply that same player-impact profile across the rest of the NBA.
 
-The finished write-up lives in **`paper/`**:
+## Project Overview
 
-- **PDF (read this):** [`paper/tommy_award_research_paper.pdf`](paper/tommy_award_research_paper.pdf) — *Predicting Tommy Award Winners with Machine Learning: From Boston Celtics Game Logs to League-Wide Player Profiles*
-- **Source:** [`paper/tommy_award_research_paper.tex`](paper/tommy_award_research_paper.tex) — compile with `pdflatex` from `paper/` (see [Quick start](#quick-start-reproduce-analysis-without-api-calls) below and [`paper/README.md`](paper/README.md)).
+I collected Tommy Award winners from **781 Celtics games across 10 NBA seasons** and matched each winner with player-level NBA statistics from the same game. The resulting dataset labels each player-game observation as either a Tommy Award winner or non-winner.
 
-If the repo is on GitHub, the root **`CITATION.cff`** powers the **“Cite this repository”** button on the repo home page. Pinning this repository on your GitHub profile also helps visitors find it quickly.
+From there, I built a Python machine learning pipeline to compare several approaches for predicting the award:
 
-## Repository layout
+- Ridge Logistic Regression
+- Lasso Logistic Regression
+- Elastic-Net Logistic Regression
+- Decision Tree
+- Random Forest
+- XGBoost
 
-| Path | Purpose |
-|------|---------|
-| `data/` | Canonical CSV inputs: hustle-enriched Celtics table, Tommy winners, and related QA extracts. |
-| `notebooks/` | Jupyter workflows: ridge/lasso/logistic, tree/RF/XGB baselines, league-wide prediction notebook, slide export helper. |
-| `csv_builders/` | Python modules and CLIs to **rebuild** the player–game table from `nba_api` and to enrich it (hustle, usage, net rating). |
-| `scripts/` | One-off analysis and LaTeX table generators (per-60 rankings, RF feature importances, Tommy leader/surprise summaries, figures). |
-| `predictions/` | Cached enriched per-team CSVs and combined predicted-win tallies (from the league notebook). |
-| `paper/` | **Research paper:** main `.tex`, committed PDF, generated table fragments; see [`paper/README.md`](paper/README.md). |
-| `results/figures/` | Plots saved by scripts or notebooks (metrics, baselines, per-60 bar chart, position pie chart). |
-| `archive/old_model_attempts/` | Older experiments (pregame features, baseline comparisons). Paths there may still assume CSVs in the project root—use `data/` or adjust paths if you revive them. |
-| `archive/pre_net_rating_model_snapshots/` | **Frozen** notebooks, figures, per-60 TeX, and **`data/Tommy_Award_Player_Game_Table_hustle.csv`** from commit `27ae5b0` (before net-rating / hustle-proxy refresh). See `README.md` in that folder. |
+Because there is only one winner in each game, the models were trained as binary classifiers and their predicted probabilities were used to rank players within each game.
 
-## Paper-era worktree (optional)
+## Feature Engineering
 
-To open the **full project exactly as at `27ae5b0`** (notebooks and hustle CSV at the old paths, no `data/` subfolder):
+A major part of the project was creating statistics that could capture more than raw production.
 
-```bash
-cd "/path/to/Celtics_Project"
-git worktree add ../Celtics_Project_paper_era 27ae5b0
-cd ../Celtics_Project_paper_era
-git switch -c paper-era-27ae5b0
-```
+Along with traditional NBA statistics such as points, rebounds, assists, steals, blocks, minutes, and shooting totals, I created features including:
 
-The extra `git switch` puts the worktree on a **named branch** (same commit as `27ae5b0`). That avoids **detached HEAD**, which some editors mis-report as thousands of staged deletions when the window is multi-root. Use any sibling directory name you prefer; start Jupyter from that folder’s root so paths match the old notebooks.  
-**Remove when done:** `git worktree remove ../Celtics_Project_paper_era`
+- **Per-minute statistics** to account for differences in playing time
+- **Within-game rank statistics** to measure how much a player stood out relative to everyone else
+- **Stocks** combining steals and blocks
+- **Hustle Proxy** combining offensive rebounds, steals, and blocks relative to minutes
+- **Impact Efficiency** measuring net rating relative to usage rate
+- **Role Outperformance** rewarding strong net impact from players with smaller offensive roles
 
-Run **commands from the repository root** unless noted otherwise. Jupyter kernels work whether the server is started in the root or in `notebooks/`; notebook cells resolve `REPO_ROOT` automatically.
+These features were designed to help distinguish between raw statistical production and the type of effort and impact associated with the Tommy Award.
 
-## Quick start (reproduce analysis without API calls)
+## Model Evaluation
 
-1. **Python environment**
+The models were evaluated using both game-level ranking performance and probability-based metrics.
 
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate   # Windows: .venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
+**Top-1 and Top-3 accuracy** measured how often the actual winner appeared at the top of the model's player rankings. **PR-AUC** was especially important because the dataset contains far more non-winners than winners. **Brier score** and **log loss** were also used to evaluate the quality of the predicted probabilities.
 
-2. **Notebooks** (open `notebooks/` in Jupyter Lab/VS Code)
+Random Forest and XGBoost were used alongside the logistic regression models to determine whether nonlinear relationships and interactions between player statistics improved predictions.
 
-   - `Ridge_Lasso_Logistic_Regression.ipynb` — regularized logistic models on `data/Tommy_Award_Player_Game_Table_hustle.csv`.
-   - `decision_tree_classifier.ipynb`, `random_forest_classifier.ipynb`, `xgboost_classifier.ipynb` — tree models with the same season split as the paper.
-   - `predict_tommy_award_other_teams.ipynb` — trains on Celtics data, then fetches and scores all other teams (writes under `predictions/`). **Requires network** and significant runtime; use the committed `predictions/` files to skip this.
-   - `export_slides_mar6_2026_table.ipynb` — small table for a fixed game date.
+## Applying the Model Across the NBA
 
-3. **Paper tables and figures (deterministic given the CSV and `predictions/`)**
+After learning the statistical profile associated with Tommy Award-winning performances in Boston, I extended the analysis to **all 30 NBA teams**.
 
-   ```bash
-   python3 scripts/export_rf_feature_importances_tex.py
-   python3 scripts/build_results_per60_table_tex.py
-   ```
+Players on other teams were scored using the model trained on Celtics data, allowing the original idea behind the Tommy Award to be applied outside of Boston. This made it possible to identify both stars and less-recognized players whose performances showed similar combinations of hustle, efficiency, role outperformance, and overall impact.
 
-   These refresh `paper/results_rf_feature_importance_body.tex`, `paper/results_per60_table_body*.tex`, and `results/figures/results_per60_top10.png`.
+I also normalized predicted Tommy-style wins by playing time to examine **wins per 60 minutes**, which helped surface players who produced this type of impact despite having smaller roles or fewer minutes.
 
-4. **Compile the paper**
+## Research Paper
 
-   ```bash
-   cd paper
-   pdflatex -interaction=nonstopmode tommy_award_research_paper.tex
-   pdflatex -interaction=nonstopmode tommy_award_research_paper.tex
-   ```
+A full write-up of the project is available here:
 
-   The main file `\input`s `results_per60_table_body_top100.tex`. The Random Forest **feature-importance** table in the paper uses the top fifteen values **inlined** in `tommy_award_research_paper.tex` (aligned with the notebook bar chart); `results_rf_feature_importance_body.tex` holds the **full** 39-feature ranking from `export_rf_feature_importances_tex.py`.
+- [Research Paper PDF](paper/tommy_award_research_paper.pdf)
+- [LaTeX Source](paper/tommy_award_research_paper.tex)
 
-## Rebuilding data from the NBA API
+## Repository Structure
 
-These steps are **optional** if you only want to rerun models on the committed `data/` and `predictions/` snapshots.
+| Folder | Contents |
+|---|---|
+| `data/` | Celtics player-game data and Tommy Award labels |
+| `notebooks/` | Logistic regression, Decision Tree, Random Forest, XGBoost, and league-wide analysis |
+| `csv_builders/` | NBA data collection and preprocessing |
+| `scripts/` | Feature importance, per-60 analysis, and supporting analyses |
+| `predictions/` | League-wide model outputs |
+| `results/figures/` | Charts and model results |
+| `paper/` | Research paper and generated tables |
 
-1. **Base player–game table** (Celtics games aligned to Tommy winners; slow, many API calls):
+## Tools
 
-   ```bash
-   python3 -m csv_builders.build_tommy_award_player_game_table
-   ```
-
-   Writes `data/Tommy_Award_Player_Game_Table.csv` (and queue/failed CSVs in `data/`).
-
-2. **Hustle + usage + net rating columns**
-
-   ```bash
-   python3 -m csv_builders.enrich_player_game_with_hustle
-   ```
-
-   Defaults: read `data/Tommy_Award_Player_Game_Table.csv`, write `data/Tommy_Award_Player_Game_Table_hustle.csv`.
-
-3. **Refresh `net_rating` only** (one request per game; on the order of many minutes with polite sleeps):
-
-   ```bash
-   python3 csv_builders/update_tommy_hustle_net_rating.py
-   ```
-
-4. **League predictions** — run the relevant cells in `notebooks/predict_tommy_award_other_teams.ipynb` (or the whole notebook). Output paths stay under `predictions/`.
-
-**Note:** API availability, timeouts, and season coverage can change row counts and column completeness versus the CSV snapshot in this repo.
-
-## Auxiliary scripts
-
-Run from the repository root:
-
-- `python3 scripts/plot_tommy_winners_position_pie.py` → `results/figures/tommy_winners_position_pie.png`
-- `python3 scripts/tommy_leaders_hustle_stats.py` → `predictions/tommy_winners_hustle_leaderboard.csv`
-- `python3 scripts/tommy_surprise_game_winners.py` → surprise-winner summaries in `predictions/`
-- `python3 scripts/tommy_wins_excluding_star_hubs.py` — stdout analysis using `predictions/`
-
-## Reproducibility notes
-
-- Tree/RF notebooks and `scripts/export_rf_feature_importances_tex.py` use **`SEED = 58`** and the Optuna RF hyperparameters documented in that script.
-- **`hustle_proxy`** is per minute: \((\mathrm{OREB} + \mathrm{STL} + \mathrm{BLK}) / \mathrm{minutes}\) (aligned across ridge and tree pipelines).
-- Committed **`predictions/*.csv`** are large; they are the expected inputs for `build_results_per60_table_tex.py` and the per-60 section of the paper.
-
-## License / data
-
-NBA statistics are fetched via [nba_api](https://github.com/swar/nba_api) from NBA.com-style endpoints. Respect rate limits; the builders use small delays between requests.
+**Python · pandas · NumPy · scikit-learn · XGBoost · Optuna · nba_api · Jupyter**
