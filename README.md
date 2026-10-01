@@ -55,6 +55,7 @@ I also normalized predicted Tommy-style wins by playing time to examine **wins p
 A full write-up of the project is available here:
 
 - [Research Paper PDF](paper/tommy_award_research_paper.pdf)
+- [Presentation](presentation/Copy%20of%20Tommy%20Award%20Slideshow.pptx)
 - [LaTeX Source](paper/tommy_award_research_paper.tex)
 
 ## Repository Structure
